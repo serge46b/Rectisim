@@ -3,26 +3,25 @@
 This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="facing" val="south"/>
+      <a name="facing" val="west"/>
     </tool>
     <tool name="Pin">
       <a name="facing" val="south"/>
     </tool>
     <tool name="Probe">
-      <a name="facing" val="west"/>
+      <a name="facing" val="north"/>
     </tool>
     <tool name="Tunnel">
-      <a name="facing" val="east"/>
+      <a name="facing" val="south"/>
     </tool>
     <tool name="Pull Resistor">
       <a name="facing" val="north"/>
     </tool>
     <tool name="Clock">
-      <a name="facing" val="north"/>
+      <a name="facing" val="south"/>
     </tool>
     <tool name="Constant">
-      <a name="width" val="8"/>
-      <a name="value" val="0x80"/>
+      <a name="facing" val="south"/>
     </tool>
   </lib>
   <lib desc="#Gates" name="1">
@@ -692,735 +691,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(630,2060)" to="(640,2060)"/>
     <wire from="(630,1580)" to="(640,1580)"/>
     <wire from="(990,220)" to="(990,270)"/>
-    <comp lib="0" loc="(1290,2270)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="0" loc="(410,1800)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1350,1930)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(910,1210)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(250,2550)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(1790,2420)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(1070,2040)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1790,1710)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(470,2630)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="7" loc="(470,2550)" name="Cell controller"/>
-    <comp lib="5" loc="(690,1610)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="7" loc="(910,1370)" name="Cell controller"/>
-    <comp lib="5" loc="(1790,930)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="7" loc="(470,1850)" name="Cell controller"/>
-    <comp lib="0" loc="(570,560)" name="Tunnel">
-      <a name="facing" val="north"/>
-      <a name="width" val="8"/>
-      <a name="label" val="Rows"/>
-    </comp>
-    <comp lib="5" loc="(910,950)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(250,1450)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(910,1190)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(1570,2090)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="0" loc="(850,1580)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="7" loc="(470,2320)" name="Cell controller"/>
-    <comp lib="0" loc="(1070,2290)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(1570,930)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(1790,2090)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="7" loc="(1790,1370)" name="Cell controller"/>
-    <comp lib="0" loc="(410,820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="0" loc="(1070,1580)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(920,190)" name="DotMatrix">
-      <a name="matrixcols" val="9"/>
-      <a name="matrixrows" val="15"/>
-    </comp>
-    <comp lib="5" loc="(1570,1370)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="7" loc="(1350,1110)" name="Cell controller"/>
-    <comp lib="7" loc="(250,850)" name="Cell controller"/>
-    <comp lib="5" loc="(690,1110)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(1130,1450)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="7" loc="(690,1850)" name="Cell controller"/>
-    <comp lib="0" loc="(180,260)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1570,1610)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(1350,1110)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="0" loc="(850,800)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(250,850)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="0" loc="(100,2740)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="8"/>
-      <a name="label" val="Columns"/>
-    </comp>
-    <comp lib="5" loc="(250,1470)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(150,500)" name="Clock">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="7" loc="(1790,2090)" name="Cell controller"/>
-    <comp lib="0" loc="(190,1080)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(360,190)" name="LED">
-      <a name="facing" val="north"/>
-      <a name="color" val="#f0ea00"/>
-    </comp>
-    <comp lib="7" loc="(470,1610)" name="Cell controller"/>
-    <comp lib="5" loc="(1130,1710)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(1290,1560)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="0" loc="(630,2270)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1790,2400)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="7" loc="(690,1610)" name="Cell controller"/>
-    <comp lib="5" loc="(1250,190)" name="DotMatrix">
-      <a name="matrixcols" val="9"/>
-      <a name="matrixrows" val="15"/>
-    </comp>
-    <comp lib="7" loc="(1570,850)" name="Cell controller"/>
-    <comp lib="0" loc="(1730,2060)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="7" loc="(1130,1850)" name="Cell controller"/>
-    <comp lib="5" loc="(250,950)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(250,1610)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(1350,1950)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="7" loc="(910,1850)" name="Cell controller"/>
-    <comp lib="0" loc="(1510,1800)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="0" loc="(200,2740)" name="Splitter">
-      <a name="fanout" val="8"/>
-      <a name="incoming" val="8"/>
-    </comp>
-    <comp lib="5" loc="(1790,1210)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="7" loc="(910,850)" name="Cell controller"/>
-    <comp lib="7" loc="(250,2090)" name="Cell controller"/>
-    <comp lib="5" loc="(1570,1950)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="7" loc="(1350,2090)" name="Cell controller"/>
-    <comp lib="0" loc="(1070,800)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(470,1210)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(570,480)" name="DotMatrix">
-      <a name="matrixcols" val="1"/>
-      <a name="matrixrows" val="8"/>
-    </comp>
-    <comp lib="5" loc="(690,2170)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(420,520)" name="Tunnel">
-      <a name="width" val="8"/>
-      <a name="label" val="Columns"/>
-    </comp>
-    <comp lib="0" loc="(190,800)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="1" loc="(310,170)" name="AND Gate">
-      <a name="facing" val="north"/>
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-      <a name="negate0" val="true"/>
-    </comp>
-    <comp lib="5" loc="(1350,1710)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(850,1800)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="0" loc="(630,2520)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(250,2190)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(250,1210)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(690,2650)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(910,1850)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="0" loc="(410,1560)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1570,1850)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="7" loc="(1350,1850)" name="Cell controller"/>
-    <comp lib="5" loc="(690,2630)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="7" loc="(1570,1370)" name="Cell controller"/>
-    <comp lib="7" loc="(910,2090)" name="Cell controller"/>
-    <comp lib="7" loc="(1570,1110)" name="Cell controller"/>
-    <comp lib="5" loc="(1350,1190)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(1070,1320)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1790,2650)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(1570,2170)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(1570,1190)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(190,1060)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="4" loc="(440,180)" name="Counter"/>
-    <comp lib="10" loc="(310,80)" name="input controller"/>
-    <comp lib="0" loc="(1730,1340)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(1790,2170)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(850,1820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(910,1930)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(1130,2550)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(1570,1710)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(1730,800)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1350,1450)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(690,1370)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(1130,850)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="0" loc="(80,310)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="8"/>
-      <a name="label" val="Columns"/>
-    </comp>
-    <comp lib="0" loc="(410,2040)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(690,1470)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(470,1710)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(250,930)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(250,1710)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(1570,1110)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(470,2400)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(1350,2400)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(1790,2550)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="0" loc="(230,170)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="Y"/>
-    </comp>
-    <comp lib="0" loc="(1290,2500)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(910,1690)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(250,1110)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="0" loc="(1730,1580)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(1130,950)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(350,610)" name="DotMatrix">
-      <a name="inputtype" val="row"/>
-      <a name="matrixcols" val="8"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ffa60064"/>
-      <a name="offcolor" val="#40404000"/>
-    </comp>
-    <comp lib="0" loc="(1070,1820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="7" loc="(1350,2550)" name="Cell controller"/>
-    <comp lib="0" loc="(1510,1340)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="0" loc="(410,2060)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="7" loc="(1130,1110)" name="Cell controller"/>
-    <comp lib="0" loc="(850,1060)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1570,1450)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="7" loc="(1130,2550)" name="Cell controller"/>
-    <comp lib="5" loc="(1350,2420)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="7" loc="(910,1110)" name="Cell controller"/>
-    <comp lib="0" loc="(850,2520)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="0" loc="(850,1560)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(470,1930)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(1130,1210)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(470,1110)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(910,2170)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(690,950)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(1350,1610)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(1130,1370)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="7" loc="(690,2090)" name="Cell controller"/>
-    <comp lib="0" loc="(1290,800)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="0" loc="(190,1320)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="0" loc="(850,1080)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(1350,2190)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(1290,2520)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="0" loc="(190,1580)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="0" loc="(190,2290)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="0" loc="(830,160)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="Y"/>
-    </comp>
-    <comp lib="5" loc="(1570,1470)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(470,1690)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(1790,1110)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(1570,950)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(1790,1190)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(1290,1320)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1130,2650)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(1510,2270)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(90,460)" name="Button"/>
     <comp lib="0" loc="(890,310)" name="Splitter">
       <a name="fanout" val="4"/>
       <a name="incoming" val="28"/>
@@ -1452,128 +722,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit26" val="3"/>
       <a name="bit27" val="3"/>
     </comp>
-    <comp lib="5" loc="(470,2170)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(410,2520)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="0" loc="(1070,2520)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="0" loc="(410,2290)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="7" loc="(1130,1610)" name="Cell controller"/>
-    <comp lib="0" loc="(850,2500)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="0" loc="(1510,2290)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="8" loc="(1140,200)" name="Output_big_numder"/>
-    <comp lib="8" loc="(1030,200)" name="Output_big_numder"/>
-    <comp lib="0" loc="(570,520)" name="Splitter">
-      <a name="facing" val="north"/>
-      <a name="fanout" val="8"/>
-      <a name="incoming" val="8"/>
-      <a name="appear" val="center"/>
-    </comp>
-    <comp lib="7" loc="(250,2550)" name="Cell controller"/>
-    <comp lib="0" loc="(630,1580)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="0" loc="(1730,2270)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="0" loc="(410,2500)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(690,2420)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(470,2320)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(690,1950)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="7" loc="(470,1370)" name="Cell controller"/>
-    <comp lib="7" loc="(690,1110)" name="Cell controller"/>
-    <comp lib="0" loc="(410,1580)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(250,1690)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(630,2040)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1790,1950)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="7" loc="(1130,850)" name="Cell controller"/>
-    <comp lib="0" loc="(1730,2040)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(690,2320)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="0" loc="(190,1340)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="7" loc="(250,2320)" name="Cell controller"/>
-    <comp lib="0" loc="(420,280)" name="Clock">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="7" loc="(1790,1850)" name="Cell controller"/>
-    <comp lib="5" loc="(690,930)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(1510,2060)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
+    <comp lib="0" loc="(180,290)" name="Splitter">
+      <a name="facing" val="south"/>
+      <a name="bit0" val="1"/>
+      <a name="bit1" val="0"/>
     </comp>
     <comp lib="5" loc="(250,2320)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
@@ -1581,284 +733,216 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="5" loc="(1350,850)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="0" loc="(1730,1800)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1350,1850)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="0" loc="(850,2060)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(470,1950)" name="DotMatrix">
+    <comp lib="7" loc="(250,850)" name="Cell controller"/>
+    <comp lib="5" loc="(1130,1210)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(690,1450)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="7" loc="(250,1370)" name="Cell controller"/>
-    <comp lib="5" loc="(690,850)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(1350,2170)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(390,190)" name="LED">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="0" loc="(850,820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="0" loc="(1070,1080)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(1790,2630)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(80,340)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="8"/>
-      <a name="label" val="Rows"/>
-    </comp>
-    <comp lib="0" loc="(520,380)" name="Splitter">
-      <a name="fanout" val="8"/>
-      <a name="incoming" val="8"/>
-      <a name="appear" val="center"/>
-    </comp>
-    <comp lib="0" loc="(850,2040)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1790,2190)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(1140,190)" name="DotMatrix">
-      <a name="matrixcols" val="9"/>
-      <a name="matrixrows" val="15"/>
-    </comp>
-    <comp lib="5" loc="(690,2090)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="7" loc="(690,2320)" name="Cell controller"/>
-    <comp lib="7" loc="(690,2550)" name="Cell controller"/>
-    <comp lib="11" loc="(420,580)" name="Field cahce"/>
-    <comp lib="0" loc="(1730,1060)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="0" loc="(190,1820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(1790,1450)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(1130,1110)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(910,850)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
     </comp>
     <comp lib="7" loc="(1130,2320)" name="Cell controller"/>
-    <comp lib="0" loc="(1070,1800)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
+    <comp lib="5" loc="(250,2550)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="0" loc="(190,2500)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
+    <comp lib="5" loc="(690,1370)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="7" loc="(1130,1370)" name="Cell controller"/>
-    <comp lib="0" loc="(1290,1080)" name="Tunnel">
+    <comp lib="0" loc="(630,1080)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
-    <comp lib="5" loc="(910,2630)" name="DotMatrix">
+    <comp lib="5" loc="(910,1110)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(910,2320)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="7" loc="(690,1850)" name="Cell controller"/>
+    <comp lib="5" loc="(1350,1950)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
+      <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="7" loc="(1350,2320)" name="Cell controller"/>
-    <comp lib="5" loc="(310,80)" name="Keyboard"/>
-    <comp lib="0" loc="(630,2060)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="0" loc="(410,2270)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="0" loc="(1290,1060)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1130,2630)" name="DotMatrix">
+    <comp lib="5" loc="(470,2190)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
+      <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
     <comp lib="0" loc="(1510,1580)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
-    <comp lib="5" loc="(340,610)" name="DotMatrix">
-      <a name="inputtype" val="row"/>
-      <a name="matrixcols" val="9"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0085ff64"/>
-      <a name="offcolor" val="#40404000"/>
-    </comp>
-    <comp lib="5" loc="(690,1210)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(690,1690)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(1290,820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="0" loc="(1510,1820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(580,380)" name="DotMatrix">
-      <a name="inputtype" val="row"/>
-      <a name="matrixcols" val="8"/>
-      <a name="matrixrows" val="1"/>
-    </comp>
-    <comp lib="7" loc="(470,850)" name="Cell controller"/>
-    <comp lib="0" loc="(1070,2500)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1130,930)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(190,1800)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1570,2550)" name="DotMatrix">
+    <comp lib="5" loc="(690,1850)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="0" loc="(210,130)" name="Clock"/>
-    <comp lib="5" loc="(1570,2420)" name="DotMatrix">
+    <comp lib="5" loc="(1570,1210)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(920,200)" name="Output_big_numder"/>
-    <comp lib="5" loc="(1350,950)" name="DotMatrix">
+    <comp lib="5" loc="(1350,2550)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="0" loc="(850,1340)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
+    <comp lib="5" loc="(470,1850)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="0" loc="(1290,1800)" name="Tunnel">
+    <comp lib="0" loc="(1730,1060)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="5" loc="(1570,2630)" name="DotMatrix">
+    <comp lib="0" loc="(410,1560)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(470,1690)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="7" loc="(1570,2090)" name="Cell controller"/>
+    <comp lib="0" loc="(1510,2270)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(470,1470)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1510,800)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="7" loc="(910,2550)" name="Cell controller"/>
+    <comp lib="5" loc="(470,2420)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1130,1610)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="0" loc="(630,2270)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(1790,1370)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="0" loc="(190,2500)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(1570,930)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="7" loc="(250,2550)" name="Cell controller"/>
+    <comp lib="0" loc="(1290,1820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="7" loc="(250,1370)" name="Cell controller"/>
     <comp lib="5" loc="(1570,2190)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="0" loc="(1730,2290)" name="Tunnel">
+    <comp lib="0" loc="(190,2270)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="0" loc="(210,280)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(470,930)" name="DotMatrix">
+    <comp lib="5" loc="(910,1450)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="0" loc="(630,800)" name="Tunnel">
+    <comp lib="5" loc="(1130,1690)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1350,1110)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(1570,1950)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1350,1190)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1790,930)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(470,1710)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1350,2420)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1070,1800)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
@@ -1871,16 +955,71 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="offcolor" val="#40404000"/>
       <a name="dotshape" val="circle"/>
     </comp>
-    <comp lib="0" loc="(630,1320)" name="Tunnel">
+    <comp lib="7" loc="(690,2550)" name="Cell controller"/>
+    <comp lib="5" loc="(1570,1930)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1290,1060)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="5" loc="(1350,1210)" name="DotMatrix">
+    <comp lib="5" loc="(1130,950)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="7" loc="(690,1370)" name="Cell controller"/>
+    <comp lib="7" loc="(690,2090)" name="Cell controller"/>
+    <comp lib="7" loc="(1570,2550)" name="Cell controller"/>
+    <comp lib="5" loc="(470,2170)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(630,2520)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(690,1610)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(250,2400)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(910,2420)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(90,460)" name="Button"/>
+    <comp lib="0" loc="(2350,770)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="5" loc="(250,2170)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1730,2040)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
     </comp>
     <comp lib="5" loc="(690,2190)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
@@ -1888,18 +1027,564 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="7" loc="(1570,2320)" name="Cell controller"/>
+    <comp lib="7" loc="(1790,850)" name="Cell controller"/>
+    <comp lib="5" loc="(1130,2550)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="7" loc="(250,1110)" name="Cell controller"/>
+    <comp lib="0" loc="(410,2060)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(250,1190)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(630,1320)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="0" loc="(190,2040)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="7" loc="(910,2090)" name="Cell controller"/>
+    <comp lib="0" loc="(150,500)" name="Clock">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="5" loc="(910,2090)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(250,1610)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(690,2170)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(250,1370)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="0" loc="(1290,1340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="0" loc="(570,560)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="width" val="8"/>
+      <a name="label" val="Rows"/>
+    </comp>
+    <comp lib="0" loc="(410,1820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(690,2090)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(1570,2420)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(250,850)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(1130,2320)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(1350,2320)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="0" loc="(1730,1340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="0" loc="(190,2520)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="0" loc="(1730,2500)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(1350,2090)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(910,1710)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(410,2520)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(910,2400)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(630,1820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(1570,1470)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(250,2630)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(630,800)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(1790,2170)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="7" loc="(910,1850)" name="Cell controller"/>
+    <comp lib="0" loc="(570,520)" name="Splitter">
+      <a name="facing" val="north"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+      <a name="appear" val="center"/>
+    </comp>
+    <comp lib="5" loc="(1790,1110)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="7" loc="(250,2320)" name="Cell controller"/>
+    <comp lib="5" loc="(470,1450)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1290,2500)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(1570,2320)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="0" loc="(850,1800)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="7" loc="(1130,2550)" name="Cell controller"/>
+    <comp lib="7" loc="(690,850)" name="Cell controller"/>
+    <comp lib="7" loc="(470,1610)" name="Cell controller"/>
+    <comp lib="0" loc="(1290,800)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="0" loc="(1070,820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="0" loc="(190,2290)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(910,2650)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1570,2090)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="7" loc="(910,1110)" name="Cell controller"/>
+    <comp lib="0" loc="(520,380)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="8"/>
+      <a name="label" val="Columns"/>
+    </comp>
+    <comp lib="7" loc="(1350,2320)" name="Cell controller"/>
+    <comp lib="0" loc="(630,1560)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(250,2090)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(1030,190)" name="DotMatrix">
+      <a name="matrixcols" val="9"/>
+      <a name="matrixrows" val="15"/>
+    </comp>
+    <comp lib="5" loc="(910,1190)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1790,2550)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="0" loc="(1730,2290)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="0" loc="(1290,2520)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="7" loc="(910,1610)" name="Cell controller"/>
+    <comp lib="5" loc="(910,1370)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(1350,950)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(520,380)" name="Splitter">
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+      <a name="appear" val="center"/>
+    </comp>
+    <comp lib="5" loc="(1350,1710)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="7" loc="(470,850)" name="Cell controller"/>
+    <comp lib="0" loc="(80,340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="8"/>
+      <a name="label" val="Rows"/>
+    </comp>
+    <comp lib="5" loc="(1570,950)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1070,1060)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(910,2550)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="0" loc="(2350,720)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="width" val="8"/>
+      <a name="label" val="Rows"/>
+    </comp>
+    <comp lib="0" loc="(630,1060)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(910,2170)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1130,2630)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(850,1340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(690,1470)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(910,850)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(1130,1710)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="7" loc="(1130,1610)" name="Cell controller"/>
+    <comp lib="5" loc="(250,1930)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1070,1320)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="7" loc="(690,2320)" name="Cell controller"/>
+    <comp lib="0" loc="(850,1560)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="0" loc="(630,2500)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="7" loc="(1790,2550)" name="Cell controller"/>
+    <comp lib="5" loc="(1350,1930)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="7" loc="(1350,1850)" name="Cell controller"/>
+    <comp lib="0" loc="(420,520)" name="Tunnel">
+      <a name="width" val="8"/>
+      <a name="label" val="Columns"/>
+    </comp>
+    <comp lib="5" loc="(1570,2550)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="7" loc="(1570,850)" name="Cell controller"/>
+    <comp lib="8" loc="(1140,200)" name="Output_big_numder"/>
+    <comp lib="5" loc="(250,1710)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1070,1080)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="0" loc="(630,1340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="7" loc="(250,2090)" name="Cell controller"/>
+    <comp lib="0" loc="(850,2060)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(1570,2650)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(470,1190)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1570,1450)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1510,1820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(1790,2190)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1790,850)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(910,1850)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(1570,2170)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1790,1470)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(690,1190)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(920,190)" name="DotMatrix">
+      <a name="matrixcols" val="9"/>
+      <a name="matrixrows" val="15"/>
+    </comp>
+    <comp lib="0" loc="(410,1580)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="0" loc="(1290,820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(1130,1370)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(250,930)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1510,1340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="0" loc="(630,2290)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(250,1210)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(690,2630)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(190,820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="0" loc="(850,1820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(690,2550)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(250,2420)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(190,1340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
     <comp lib="5" loc="(1790,2320)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="5" loc="(910,1950)" name="DotMatrix">
+    <comp lib="7" loc="(910,850)" name="Cell controller"/>
+    <comp lib="5" loc="(250,1110)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
     </comp>
     <comp lib="0" loc="(570,480)" name="Splitter">
       <a name="facing" val="south"/>
@@ -1915,342 +1600,18 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit6" val="1"/>
       <a name="bit7" val="0"/>
     </comp>
-    <comp lib="5" loc="(1130,1470)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="7" loc="(910,2550)" name="Cell controller"/>
-    <comp lib="7" loc="(1570,1610)" name="Cell controller"/>
-    <comp lib="7" loc="(1350,1370)" name="Cell controller"/>
-    <comp lib="7" loc="(250,1850)" name="Cell controller"/>
-    <comp lib="0" loc="(850,2270)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(250,1850)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="0" loc="(1510,1060)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="0" loc="(1290,2060)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="0" loc="(410,1080)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="7" loc="(690,850)" name="Cell controller"/>
-    <comp lib="0" loc="(520,380)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="8"/>
-      <a name="label" val="Columns"/>
-    </comp>
-    <comp lib="0" loc="(1730,820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="0" loc="(180,290)" name="Splitter">
-      <a name="facing" val="south"/>
-      <a name="bit0" val="1"/>
-      <a name="bit1" val="0"/>
-    </comp>
-    <comp lib="5" loc="(1350,2090)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(250,2650)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(1510,1560)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1570,2400)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(1290,2290)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="0" loc="(1070,1560)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(690,1850)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(910,2420)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(1730,2520)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(1790,950)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(1130,2420)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="7" loc="(250,1610)" name="Cell controller"/>
     <comp lib="0" loc="(1730,1320)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="0" loc="(630,2290)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(1130,1950)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(630,1820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(910,1110)" name="DotMatrix">
+    <comp lib="5" loc="(470,2320)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="0" loc="(1730,1820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(470,1370)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(1790,1850)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(1790,1690)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(1350,1470)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(850,2290)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(470,1610)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(1130,2400)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(470,2650)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(470,1470)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(1790,850)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(250,2630)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(1730,2500)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1350,2630)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(910,930)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(260,500)" name="LED">
-      <a name="facing" val="north"/>
-      <a name="color" val="#ff58f2"/>
-    </comp>
-    <comp lib="0" loc="(410,1820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="7" loc="(1570,2550)" name="Cell controller"/>
-    <comp lib="0" loc="(410,1060)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1030,190)" name="DotMatrix">
-      <a name="matrixcols" val="9"/>
-      <a name="matrixrows" val="15"/>
-    </comp>
-    <comp lib="0" loc="(630,1560)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1130,1850)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="8" loc="(1250,200)" name="Output_big_numder"/>
-    <comp lib="5" loc="(470,850)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(1130,2320)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="0" loc="(1290,1340)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(1790,1370)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(470,950)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(190,2520)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="0" loc="(1290,2040)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1130,1690)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(470,2190)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(250,1190)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(2350,720)" name="Tunnel">
-      <a name="facing" val="south"/>
-      <a name="width" val="8"/>
-      <a name="label" val="Rows"/>
-    </comp>
-    <comp lib="0" loc="(630,820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="0" loc="(1290,1820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="2" loc="(830,170)" name="Demultiplexer">
-      <a name="facing" val="south"/>
-      <a name="select" val="2"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="5" loc="(910,1610)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(1790,1610)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="0" loc="(850,1320)" name="Tunnel">
+    <comp lib="0" loc="(850,2500)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
@@ -2261,34 +1622,29 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="5" loc="(910,1470)" name="DotMatrix">
+    <comp lib="7" loc="(910,1370)" name="Cell controller"/>
+    <comp lib="5" loc="(310,80)" name="Keyboard"/>
+    <comp lib="1" loc="(310,170)" name="AND Gate">
+      <a name="facing" val="north"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+      <a name="negate0" val="true"/>
+    </comp>
+    <comp lib="0" loc="(850,2290)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(1130,2420)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="5" loc="(250,2170)" name="DotMatrix">
+    <comp lib="5" loc="(1790,1610)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(690,2400)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(910,2400)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="1" loc="(240,170)" name="AND Gate">
-      <a name="facing" val="west"/>
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
     </comp>
     <comp lib="5" loc="(1350,2650)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
@@ -2296,261 +1652,120 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="0" loc="(1510,1080)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(690,2550)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="0" loc="(1730,1560)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(250,2090)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="7" loc="(1790,2320)" name="Cell controller"/>
-    <comp lib="0" loc="(190,1560)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(250,2400)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(470,2090)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(910,2320)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="0" loc="(190,2270)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(1570,2650)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(910,1370)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="7" loc="(910,2320)" name="Cell controller"/>
-    <comp lib="5" loc="(690,1710)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(910,1710)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(1570,1930)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(1070,1340)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="7" loc="(250,1110)" name="Cell controller"/>
-    <comp lib="0" loc="(630,1080)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(470,1190)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="7" loc="(910,1610)" name="Cell controller"/>
-    <comp lib="0" loc="(1070,820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="0" loc="(1070,1060)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="7" loc="(1130,2090)" name="Cell controller"/>
-    <comp lib="5" loc="(1790,1930)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="7" loc="(1350,1610)" name="Cell controller"/>
-    <comp lib="0" loc="(190,2040)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="5" loc="(470,1850)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(1570,1210)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(250,2420)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(910,2650)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(470,2420)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(910,1450)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(1070,2270)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="2"/>
-      <a name="label" val="MOSI"/>
-    </comp>
-    <comp lib="7" loc="(1790,2550)" name="Cell controller"/>
-    <comp lib="5" loc="(910,2090)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="0" loc="(1070,2060)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(250,1370)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(210,550)" name="DotMatrix">
-      <a name="inputtype" val="row"/>
-      <a name="matrixcols" val="8"/>
-      <a name="matrixrows" val="1"/>
-    </comp>
-    <comp lib="0" loc="(190,820)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(1130,2190)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#0098ff"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="0" loc="(1510,2520)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="0" loc="(410,1340)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
-    </comp>
-    <comp lib="5" loc="(1130,2170)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(1350,930)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
     <comp lib="0" loc="(410,800)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="5" loc="(1570,850)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
+    <comp lib="0" loc="(1070,800)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="5" loc="(250,1930)" name="DotMatrix">
+    <comp lib="5" loc="(1790,2400)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="0" loc="(410,1320)" name="Tunnel">
+    <comp lib="5" loc="(470,1950)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1130,1190)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(910,1210)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(850,1580)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="7" loc="(910,2320)" name="Cell controller"/>
+    <comp lib="5" loc="(580,380)" name="DotMatrix">
+      <a name="inputtype" val="row"/>
+      <a name="matrixcols" val="8"/>
+      <a name="matrixrows" val="1"/>
+    </comp>
+    <comp lib="0" loc="(1290,1800)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="7" loc="(1790,850)" name="Cell controller"/>
-    <comp lib="5" loc="(1130,2090)" name="DotMatrix">
+    <comp lib="0" loc="(1070,1820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(1570,1370)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="0" loc="(630,1060)" name="Tunnel">
+    <comp lib="5" loc="(470,2650)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(250,1450)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(470,1370)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="0" loc="(1730,1800)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="5" loc="(280,500)" name="LED">
-      <a name="facing" val="north"/>
-      <a name="color" val="#10ba00"/>
+    <comp lib="5" loc="(470,930)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="0" loc="(190,2060)" name="Tunnel">
+    <comp lib="7" loc="(690,1110)" name="Cell controller"/>
+    <comp lib="0" loc="(80,310)" name="Tunnel">
       <a name="facing" val="east"/>
+      <a name="width" val="8"/>
+      <a name="label" val="Columns"/>
+    </comp>
+    <comp lib="5" loc="(1130,1850)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(360,190)" name="LED">
+      <a name="facing" val="north"/>
+      <a name="color" val="#f0ea00"/>
+    </comp>
+    <comp lib="0" loc="(190,1560)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="0" loc="(210,280)" name="Tunnel">
+      <a name="facing" val="south"/>
       <a name="label" val="MISO"/>
     </comp>
-    <comp lib="0" loc="(1510,820)" name="Tunnel">
+    <comp lib="0" loc="(1730,1580)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
@@ -2560,14 +1775,168 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="5" loc="(240,500)" name="LED">
-      <a name="facing" val="north"/>
-      <a name="color" val="#f06538"/>
+    <comp lib="0" loc="(1730,2520)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
     </comp>
-    <comp lib="5" loc="(910,2190)" name="DotMatrix">
+    <comp lib="5" loc="(1140,190)" name="DotMatrix">
+      <a name="matrixcols" val="9"/>
+      <a name="matrixrows" val="15"/>
+    </comp>
+    <comp lib="7" loc="(1570,1110)" name="Cell controller"/>
+    <comp lib="0" loc="(410,1800)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(1570,1610)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(470,2550)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(690,850)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="0" loc="(1070,2040)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(1790,1190)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(690,1110)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="0" loc="(850,2520)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="0" loc="(100,2740)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="8"/>
+      <a name="label" val="Columns"/>
+    </comp>
+    <comp lib="5" loc="(1570,1850)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(1790,2420)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(630,2060)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="0" loc="(630,820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(1570,1690)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="2" loc="(830,170)" name="Demultiplexer">
+      <a name="facing" val="south"/>
+      <a name="select" val="2"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1290,2270)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="0" loc="(850,820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="0" loc="(1510,1060)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="7" loc="(1570,1370)" name="Cell controller"/>
+    <comp lib="7" loc="(1790,1370)" name="Cell controller"/>
+    <comp lib="5" loc="(690,1950)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="7" loc="(470,1370)" name="Cell controller"/>
+    <comp lib="5" loc="(1350,2400)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(190,1800)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="0" loc="(1290,2290)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(250,2190)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(350,610)" name="DotMatrix">
+      <a name="inputtype" val="row"/>
+      <a name="matrixcols" val="8"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ffa60064"/>
+      <a name="offcolor" val="#40404000"/>
+    </comp>
+    <comp lib="7" loc="(1790,1850)" name="Cell controller"/>
+    <comp lib="5" loc="(1130,1470)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1070,2520)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="7" loc="(1350,1110)" name="Cell controller"/>
+    <comp lib="5" loc="(1130,1450)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(250,1690)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
     <comp lib="0" loc="(560,380)" name="Splitter">
@@ -2584,28 +1953,181 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit6" val="1"/>
       <a name="bit7" val="0"/>
     </comp>
-    <comp lib="0" loc="(1510,800)" name="Tunnel">
+    <comp lib="5" loc="(1570,2630)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1070,2270)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="5" loc="(470,2550)" name="DotMatrix">
+    <comp lib="5" loc="(1130,850)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="5" loc="(1350,2550)" name="DotMatrix">
+    <comp lib="0" loc="(1070,2060)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(690,1450)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="7" loc="(1790,2090)" name="Cell controller"/>
+    <comp lib="7" loc="(470,2090)" name="Cell controller"/>
+    <comp lib="0" loc="(1730,1820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="7" loc="(1570,1850)" name="Cell controller"/>
+    <comp lib="5" loc="(260,500)" name="LED">
+      <a name="facing" val="north"/>
+      <a name="color" val="#ff58f2"/>
+    </comp>
+    <comp lib="11" loc="(420,310)" name="MCU v2"/>
+    <comp lib="7" loc="(250,1610)" name="Cell controller"/>
+    <comp lib="5" loc="(280,500)" name="LED">
+      <a name="facing" val="north"/>
+      <a name="color" val="#10ba00"/>
+    </comp>
+    <comp lib="8" loc="(1030,200)" name="Output_big_numder"/>
+    <comp lib="5" loc="(910,1930)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(200,2740)" name="Splitter">
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(1070,2290)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="0" loc="(850,1320)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="7" loc="(470,1850)" name="Cell controller"/>
+    <comp lib="5" loc="(250,1850)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="5" loc="(1350,2320)" name="DotMatrix">
+    <comp lib="5" loc="(470,950)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1790,1930)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1730,1560)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="0" loc="(1290,2060)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="7" loc="(1570,2320)" name="Cell controller"/>
+    <comp lib="0" loc="(1510,2520)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="7" loc="(1130,850)" name="Cell controller"/>
+    <comp lib="0" loc="(190,1320)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(340,610)" name="DotMatrix">
+      <a name="inputtype" val="row"/>
+      <a name="matrixcols" val="9"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0085ff64"/>
+      <a name="offcolor" val="#40404000"/>
+    </comp>
+    <comp lib="7" loc="(1790,1110)" name="Cell controller"/>
+    <comp lib="7" loc="(1790,1610)" name="Cell controller"/>
+    <comp lib="5" loc="(1790,2090)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(1350,930)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(690,2400)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(630,1800)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="0" loc="(630,2040)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(390,190)" name="LED">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="5" loc="(250,950)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1510,2290)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="7" loc="(1350,1370)" name="Cell controller"/>
+    <comp lib="5" loc="(1570,1110)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="0" loc="(1730,2060)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(1350,1610)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(1130,2190)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
     </comp>
     <comp lib="5" loc="(250,1950)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
@@ -2613,80 +2135,276 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="7" loc="(470,2090)" name="Cell controller"/>
-    <comp lib="7" loc="(1790,1110)" name="Cell controller"/>
-    <comp lib="5" loc="(330,190)" name="LED">
-      <a name="facing" val="north"/>
-      <a name="color" val="#0cf000"/>
-    </comp>
-    <comp lib="5" loc="(470,1450)" name="DotMatrix">
+    <comp lib="5" loc="(470,2630)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="5" loc="(1790,1470)" name="DotMatrix">
+    <comp lib="7" loc="(470,2550)" name="Cell controller"/>
+    <comp lib="5" loc="(470,1610)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(690,2420)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="0" loc="(2350,770)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="8"/>
-      <a name="incoming" val="8"/>
-    </comp>
-    <comp lib="5" loc="(1570,2320)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="5" loc="(1570,1690)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="5" loc="(910,2550)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="0" loc="(1510,2040)" name="Tunnel">
+    <comp lib="0" loc="(1290,1560)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="5" loc="(690,1190)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="8"/>
-      <a name="color" val="#ff8d00"/>
-      <a name="offcolor" val="#40404037"/>
-    </comp>
-    <comp lib="7" loc="(690,1370)" name="Cell controller"/>
-    <comp lib="5" loc="(1130,1610)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
-    </comp>
-    <comp lib="0" loc="(1510,1320)" name="Tunnel">
+    <comp lib="0" loc="(850,2040)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="5" loc="(1350,1370)" name="DotMatrix">
-      <a name="matrixcols" val="11"/>
-      <a name="matrixrows" val="5"/>
-      <a name="color" val="#000000"/>
-      <a name="offcolor" val="#ffffff"/>
+    <comp lib="0" loc="(1730,800)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="11" loc="(420,310)" name="MCU v2"/>
-    <comp lib="0" loc="(1730,1080)" name="Tunnel">
+    <comp lib="5" loc="(1790,1210)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1730,2270)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="0" loc="(1510,1080)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="0" loc="(190,1060)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(690,930)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1350,1450)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1070,2500)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="0" loc="(410,1340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(690,1210)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1790,1450)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1130,2400)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1290,2040)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="0" loc="(410,2500)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(1790,1690)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="7" loc="(1350,850)" name="Cell controller"/>
+    <comp lib="0" loc="(230,170)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="Y"/>
+    </comp>
+    <comp lib="7" loc="(470,1110)" name="Cell controller"/>
+    <comp lib="7" loc="(1130,1110)" name="Cell controller"/>
+    <comp lib="0" loc="(1070,1560)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="0" loc="(410,2270)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(470,2090)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(1790,950)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(190,1580)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="7" loc="(1350,2090)" name="Cell controller"/>
+    <comp lib="0" loc="(410,820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="0" loc="(630,1580)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(210,550)" name="DotMatrix">
+      <a name="inputtype" val="row"/>
+      <a name="matrixcols" val="8"/>
+      <a name="matrixrows" val="1"/>
+    </comp>
+    <comp lib="5" loc="(1130,1110)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(910,1470)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1510,2060)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="0" loc="(1510,2500)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="0" loc="(1730,820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(910,950)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1790,1950)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1130,930)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(850,1080)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="0" loc="(410,2290)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(690,2320)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="8" loc="(1250,200)" name="Output_big_numder"/>
+    <comp lib="0" loc="(190,1080)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(1570,2400)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(250,2650)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="7" loc="(1130,1850)" name="Cell controller"/>
+    <comp lib="5" loc="(690,1690)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1130,2170)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(470,1930)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(240,500)" name="LED">
+      <a name="facing" val="north"/>
+      <a name="color" val="#f06538"/>
+    </comp>
+    <comp lib="5" loc="(1350,850)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="7" loc="(1570,1610)" name="Cell controller"/>
+    <comp lib="5" loc="(910,1950)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(190,800)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
     </comp>
     <comp lib="5" loc="(1350,1690)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
@@ -2694,38 +2412,319 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="7" loc="(470,1110)" name="Cell controller"/>
-    <comp lib="7" loc="(1570,1850)" name="Cell controller"/>
-    <comp lib="0" loc="(630,2500)" name="Tunnel">
+    <comp lib="0" loc="(410,1080)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="1" loc="(240,170)" name="AND Gate">
+      <a name="facing" val="west"/>
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="5" loc="(1790,2650)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="7" loc="(1130,1370)" name="Cell controller"/>
+    <comp lib="5" loc="(250,1470)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1790,1710)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(470,1210)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1510,1800)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="0" loc="(1510,2500)" name="Tunnel">
+    <comp lib="0" loc="(190,1820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(1350,1850)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="0" loc="(1070,1580)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="7" loc="(1790,2320)" name="Cell controller"/>
+    <comp lib="0" loc="(410,1060)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="5" loc="(1130,1190)" name="DotMatrix">
+    <comp lib="7" loc="(1350,1610)" name="Cell controller"/>
+    <comp lib="0" loc="(410,2040)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(1790,2630)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="7" loc="(1350,850)" name="Cell controller"/>
-    <comp lib="0" loc="(630,1340)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="MISO"/>
+    <comp lib="5" loc="(1130,1950)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="7" loc="(1790,1610)" name="Cell controller"/>
+    <comp lib="5" loc="(470,2400)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
     <comp lib="0" loc="(1290,1580)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
-    <comp lib="0" loc="(630,1800)" name="Tunnel">
+    <comp lib="0" loc="(1070,1340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="10" loc="(310,80)" name="input controller"/>
+    <comp lib="0" loc="(180,260)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="7" loc="(690,1610)" name="Cell controller"/>
+    <comp lib="5" loc="(1790,1850)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(1570,1710)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1350,2630)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1250,190)" name="DotMatrix">
+      <a name="matrixcols" val="9"/>
+      <a name="matrixrows" val="15"/>
+    </comp>
+    <comp lib="5" loc="(910,1690)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1510,1320)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="0" loc="(850,800)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(1350,1470)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(910,2190)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1730,1080)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(330,190)" name="LED">
+      <a name="facing" val="north"/>
+      <a name="color" val="#0cf000"/>
+    </comp>
+    <comp lib="5" loc="(470,1110)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(1130,2650)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="7" loc="(1130,2090)" name="Cell controller"/>
+    <comp lib="5" loc="(1350,1210)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(1350,2190)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(190,2060)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="0" loc="(1510,820)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="5" loc="(1350,1370)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(910,2630)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(910,930)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="7" loc="(470,2320)" name="Cell controller"/>
+    <comp lib="7" loc="(1570,2090)" name="Cell controller"/>
+    <comp lib="0" loc="(1290,1320)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="8" loc="(920,200)" name="Output_big_numder"/>
+    <comp lib="5" loc="(1350,2170)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(1510,1560)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="0" loc="(420,280)" name="Clock">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="7" loc="(250,1850)" name="Cell controller"/>
+    <comp lib="0" loc="(1290,1080)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MISO"/>
+    </comp>
+    <comp lib="0" loc="(410,1320)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="0" loc="(210,130)" name="Clock"/>
+    <comp lib="5" loc="(1570,850)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="7" loc="(1350,2550)" name="Cell controller"/>
+    <comp lib="5" loc="(690,950)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(690,1710)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="0" loc="(850,1060)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="0" loc="(830,160)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="Y"/>
+    </comp>
+    <comp lib="4" loc="(440,180)" name="Counter"/>
+    <comp lib="5" loc="(910,1610)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(690,2650)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#0098ff"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="11" loc="(420,580)" name="Field cahce"/>
+    <comp lib="0" loc="(1510,2040)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(1130,2090)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="5" loc="(1570,1190)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="8"/>
+      <a name="color" val="#ff8d00"/>
+      <a name="offcolor" val="#40404037"/>
+    </comp>
+    <comp lib="5" loc="(470,850)" name="DotMatrix">
+      <a name="matrixcols" val="11"/>
+      <a name="matrixrows" val="5"/>
+      <a name="color" val="#000000"/>
+      <a name="offcolor" val="#ffffff"/>
+    </comp>
+    <comp lib="0" loc="(850,2270)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="5" loc="(570,480)" name="DotMatrix">
+      <a name="matrixcols" val="1"/>
+      <a name="matrixrows" val="8"/>
     </comp>
   </circuit>
 </project>
