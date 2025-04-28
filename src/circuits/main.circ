@@ -3,25 +3,26 @@
 This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="facing" val="west"/>
+      <a name="facing" val="south"/>
     </tool>
     <tool name="Pin">
       <a name="facing" val="south"/>
     </tool>
     <tool name="Probe">
-      <a name="facing" val="north"/>
+      <a name="facing" val="west"/>
     </tool>
     <tool name="Tunnel">
-      <a name="facing" val="south"/>
+      <a name="facing" val="east"/>
     </tool>
     <tool name="Pull Resistor">
       <a name="facing" val="north"/>
     </tool>
     <tool name="Clock">
-      <a name="facing" val="south"/>
+      <a name="facing" val="north"/>
     </tool>
     <tool name="Constant">
-      <a name="facing" val="south"/>
+      <a name="width" val="8"/>
+      <a name="value" val="0x80"/>
     </tool>
   </lib>
   <lib desc="#Gates" name="1">
@@ -213,6 +214,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(670,1050)" to="(670,1310)"/>
     <wire from="(1520,1070)" to="(1560,1070)"/>
     <wire from="(370,470)" to="(370,490)"/>
+    <wire from="(510,960)" to="(510,1050)"/>
     <wire from="(1210,220)" to="(1210,290)"/>
     <wire from="(1210,190)" to="(1210,200)"/>
     <wire from="(1290,2270)" to="(1340,2270)"/>
@@ -419,6 +421,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(390,470)" to="(390,480)"/>
     <wire from="(1330,1050)" to="(1330,1310)"/>
     <wire from="(640,810)" to="(680,810)"/>
+    <wire from="(530,960)" to="(530,1050)"/>
     <wire from="(1550,790)" to="(1550,1050)"/>
     <wire from="(200,470)" to="(200,550)"/>
     <wire from="(1070,190)" to="(1070,200)"/>
@@ -530,6 +533,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1740,2050)" to="(1740,2060)"/>
     <wire from="(1730,1320)" to="(1780,1320)"/>
     <wire from="(1730,1800)" to="(1780,1800)"/>
+    <wire from="(580,890)" to="(680,890)"/>
     <wire from="(1080,1070)" to="(1080,1080)"/>
     <wire from="(910,290)" to="(1210,290)"/>
     <wire from="(1080,2510)" to="(1080,2520)"/>
@@ -566,6 +570,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(640,1810)" to="(680,1810)"/>
     <wire from="(1520,2280)" to="(1520,2290)"/>
     <wire from="(860,1070)" to="(900,1070)"/>
+    <wire from="(580,860)" to="(680,860)"/>
     <wire from="(860,2510)" to="(900,2510)"/>
     <wire from="(1190,190)" to="(1190,200)"/>
     <wire from="(1780,1780)" to="(1970,1780)"/>
@@ -1991,7 +1996,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="north"/>
       <a name="color" val="#ff58f2"/>
     </comp>
-    <comp lib="11" loc="(420,310)" name="MCU v2"/>
     <comp lib="7" loc="(250,1610)" name="Cell controller"/>
     <comp lib="5" loc="(280,500)" name="LED">
       <a name="facing" val="north"/>
@@ -2273,6 +2277,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
+    <comp lib="11" loc="(420,310)" name="MCU v2"/>
     <comp lib="0" loc="(190,1580)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
@@ -2652,6 +2657,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="MOSI"/>
     </comp>
     <comp lib="0" loc="(210,130)" name="Clock"/>
+    <comp lib="11" loc="(420,580)" name="Field cahce"/>
     <comp lib="5" loc="(1570,850)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
@@ -2693,7 +2699,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="11" loc="(420,580)" name="Field cahce"/>
     <comp lib="0" loc="(1510,2040)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
