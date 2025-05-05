@@ -422,338 +422,28 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1080,500)" to="(1080,610)"/>
     <wire from="(940,510)" to="(1020,510)"/>
     <wire from="(320,1020)" to="(390,1020)"/>
-    <comp lib="0" loc="(1020,80)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="10"/>
-      <a name="incoming" val="10"/>
-    </comp>
-    <comp lib="3" loc="(450,870)" name="Subtractor">
-      <a name="width" val="11"/>
-    </comp>
-    <comp lib="1" loc="(1010,520)" name="NOT Gate"/>
-    <comp lib="3" loc="(540,310)" name="Subtractor">
-      <a name="width" val="11"/>
-    </comp>
-    <comp lib="0" loc="(680,1340)" name="Splitter">
-      <a name="fanout" val="11"/>
-      <a name="incoming" val="11"/>
-    </comp>
-    <comp lib="0" loc="(1010,760)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="10"/>
-      <a name="incoming" val="10"/>
-    </comp>
-    <comp lib="0" loc="(1520,420)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="width" val="10"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(340,30)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="11"/>
-      <a name="incoming" val="11"/>
-    </comp>
-    <comp lib="2" loc="(1580,470)" name="Multiplexer">
-      <a name="width" val="10"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(1190,850)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="10"/>
-      <a name="incoming" val="10"/>
-    </comp>
-    <comp lib="1" loc="(930,480)" name="NOT Gate"/>
-    <comp lib="0" loc="(200,140)" name="Pull Resistor"/>
-    <comp lib="0" loc="(1000,1070)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="width" val="11"/>
-      <a name="value" val="0x3e7"/>
-    </comp>
-    <comp lib="2" loc="(1140,720)" name="Multiplexer">
-      <a name="width" val="10"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="3" loc="(670,320)" name="Subtractor">
-      <a name="width" val="11"/>
-    </comp>
-    <comp lib="0" loc="(40,1020)" name="Splitter">
-      <a name="fanout" val="10"/>
-      <a name="incoming" val="10"/>
-    </comp>
-    <comp lib="0" loc="(1070,140)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="width" val="10"/>
-      <a name="value" val="0x3e7"/>
-    </comp>
-    <comp lib="0" loc="(160,140)" name="Pin">
-      <a name="width" val="10"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Energy"/>
-    </comp>
-    <comp lib="0" loc="(990,670)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
     <comp lib="0" loc="(1110,500)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="label" val="err"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(970,880)" name="Splitter">
-      <a name="fanout" val="11"/>
-      <a name="incoming" val="11"/>
-    </comp>
-    <comp lib="0" loc="(370,260)" name="Probe">
+    <comp lib="0" loc="(490,900)" name="Probe">
       <a name="facing" val="north"/>
       <a name="radix" val="10signed"/>
-    </comp>
-    <comp lib="2" loc="(1620,140)" name="Multiplexer">
-      <a name="width" val="10"/>
-      <a name="enable" val="false"/>
     </comp>
     <comp lib="0" loc="(300,330)" name="Splitter">
       <a name="fanout" val="10"/>
       <a name="incoming" val="10"/>
     </comp>
-    <comp lib="0" loc="(770,830)" name="Splitter">
-      <a name="fanout" val="11"/>
-      <a name="incoming" val="11"/>
-    </comp>
-    <comp lib="0" loc="(260,1130)" name="Splitter">
-      <a name="fanout" val="10"/>
-      <a name="incoming" val="10"/>
-    </comp>
-    <comp lib="0" loc="(340,220)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="11"/>
-      <a name="incoming" val="11"/>
-    </comp>
-    <comp lib="0" loc="(180,1020)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="1" loc="(1070,500)" name="OR Gate">
-      <a name="inputs" val="4"/>
-    </comp>
-    <comp lib="0" loc="(340,750)" name="Splitter">
-      <a name="fanout" val="11"/>
-      <a name="incoming" val="11"/>
-    </comp>
-    <comp lib="0" loc="(300,1020)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="11"/>
-      <a name="incoming" val="11"/>
-    </comp>
-    <comp lib="0" loc="(910,210)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="3" loc="(650,880)" name="Subtractor">
-      <a name="width" val="11"/>
-    </comp>
-    <comp lib="3" loc="(870,170)" name="Adder">
-      <a name="width" val="11"/>
-    </comp>
-    <comp lib="2" loc="(1290,130)" name="Multiplexer">
-      <a name="width" val="10"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(940,700)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1210,830)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="width" val="10"/>
-      <a name="value" val="0x3e7"/>
-    </comp>
-    <comp lib="0" loc="(880,540)" name="Pull Resistor">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="3" loc="(740,270)" name="Subtractor">
-      <a name="width" val="11"/>
-    </comp>
-    <comp lib="1" loc="(610,520)" name="OR Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(570,740)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="width" val="11"/>
-      <a name="value" val="0x419"/>
-    </comp>
-    <comp lib="0" loc="(1150,970)" name="Splitter">
-      <a name="fanout" val="11"/>
-      <a name="incoming" val="11"/>
-    </comp>
-    <comp lib="3" loc="(620,800)" name="Adder">
-      <a name="width" val="11"/>
-    </comp>
-    <comp lib="0" loc="(1360,520)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="3" loc="(940,880)" name="Adder">
-      <a name="width" val="11"/>
-    </comp>
-    <comp lib="0" loc="(200,250)" name="Pull Resistor"/>
-    <comp lib="2" loc="(1160,70)" name="Multiplexer">
-      <a name="width" val="10"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(560,1080)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10signed"/>
-    </comp>
-    <comp lib="0" loc="(1770,140)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="10"/>
-      <a name="label" val="Energy"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(950,990)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="0" loc="(550,360)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="0" loc="(740,210)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10signed"/>
-    </comp>
-    <comp lib="3" loc="(480,1330)" name="Comparator">
+    <comp lib="3" loc="(1180,1030)" name="Comparator">
       <a name="width" val="11"/>
       <a name="mode" val="unsigned"/>
     </comp>
-    <comp lib="0" loc="(300,140)" name="Splitter">
-      <a name="fanout" val="10"/>
-      <a name="incoming" val="10"/>
-    </comp>
-    <comp lib="0" loc="(150,450)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="Cancel_transfer"/>
-    </comp>
-    <comp lib="0" loc="(1220,730)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="0" loc="(970,340)" name="Splitter">
-      <a name="fanout" val="11"/>
-      <a name="incoming" val="11"/>
-    </comp>
-    <comp lib="0" loc="(1650,510)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="0" loc="(220,1290)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="0" loc="(250,750)" name="Pull Resistor">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="2" loc="(580,1250)" name="Multiplexer">
-      <a name="width" val="11"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(1680,460)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="10"/>
-      <a name="label" val="C_reg"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(450,70)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10signed"/>
-    </comp>
-    <comp lib="3" loc="(520,590)" name="Comparator">
+    <comp lib="3" loc="(540,310)" name="Subtractor">
       <a name="width" val="11"/>
     </comp>
-    <comp lib="0" loc="(220,750)" name="Pin">
-      <a name="width" val="11"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="mv_energy"/>
-    </comp>
-    <comp lib="0" loc="(1730,200)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="2" loc="(1270,870)" name="Multiplexer">
-      <a name="width" val="10"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="2" loc="(1430,140)" name="Multiplexer">
-      <a name="width" val="10"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(270,380)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(650,810)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="0" loc="(980,200)" name="Splitter">
-      <a name="fanout" val="11"/>
-      <a name="incoming" val="11"/>
-    </comp>
-    <comp lib="0" loc="(200,450)" name="Pull Resistor"/>
-    <comp lib="0" loc="(1280,40)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="0" loc="(80,910)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="11"/>
-      <a name="incoming" val="11"/>
-    </comp>
-    <comp lib="0" loc="(460,1280)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="width" val="11"/>
-      <a name="value" val="0x3e7"/>
-    </comp>
-    <comp lib="0" loc="(680,910)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10signed"/>
-    </comp>
-    <comp lib="0" loc="(270,190)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="2" loc="(1320,450)" name="Multiplexer">
-      <a name="width" val="10"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(280,780)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10signed"/>
-    </comp>
-    <comp lib="0" loc="(440,640)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="width" val="11"/>
-      <a name="value" val="0x3e7"/>
-    </comp>
-    <comp lib="3" loc="(900,950)" name="Subtractor">
-      <a name="width" val="11"/>
-    </comp>
-    <comp lib="3" loc="(520,530)" name="Comparator">
-      <a name="width" val="11"/>
-    </comp>
-    <comp lib="3" loc="(610,680)" name="Comparator">
-      <a name="width" val="11"/>
-    </comp>
-    <comp lib="0" loc="(720,1220)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="10"/>
-      <a name="incoming" val="10"/>
-    </comp>
-    <comp lib="0" loc="(1010,220)" name="Splitter">
+    <comp lib="0" loc="(1010,760)" name="Splitter">
       <a name="facing" val="west"/>
       <a name="fanout" val="10"/>
       <a name="incoming" val="10"/>
@@ -762,30 +452,340 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="north"/>
       <a name="radix" val="10signed"/>
     </comp>
-    <comp lib="2" loc="(1450,460)" name="Multiplexer">
+    <comp lib="2" loc="(1270,870)" name="Multiplexer">
       <a name="width" val="10"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="3" loc="(1180,1030)" name="Comparator">
-      <a name="width" val="11"/>
-      <a name="mode" val="unsigned"/>
+    <comp lib="2" loc="(1140,720)" name="Multiplexer">
+      <a name="width" val="10"/>
+      <a name="enable" val="false"/>
     </comp>
-    <comp lib="0" loc="(490,900)" name="Probe">
+    <comp lib="0" loc="(770,830)" name="Splitter">
+      <a name="fanout" val="11"/>
+      <a name="incoming" val="11"/>
+    </comp>
+    <comp lib="0" loc="(1190,850)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="10"/>
+      <a name="incoming" val="10"/>
+    </comp>
+    <comp lib="0" loc="(280,780)" name="Probe">
       <a name="facing" val="north"/>
       <a name="radix" val="10signed"/>
     </comp>
-    <comp lib="3" loc="(420,1240)" name="Adder">
+    <comp lib="3" loc="(620,800)" name="Adder">
       <a name="width" val="11"/>
     </comp>
-    <comp lib="0" loc="(160,250)" name="Pin">
+    <comp lib="0" loc="(1010,220)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="10"/>
+      <a name="incoming" val="10"/>
+    </comp>
+    <comp lib="3" loc="(740,270)" name="Subtractor">
+      <a name="width" val="11"/>
+    </comp>
+    <comp lib="2" loc="(1320,450)" name="Multiplexer">
       <a name="width" val="10"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(940,700)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="3" loc="(940,880)" name="Adder">
+      <a name="width" val="11"/>
+    </comp>
+    <comp lib="0" loc="(1280,40)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(1020,80)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="10"/>
+      <a name="incoming" val="10"/>
+    </comp>
+    <comp lib="0" loc="(300,140)" name="Splitter">
+      <a name="fanout" val="10"/>
+      <a name="incoming" val="10"/>
+    </comp>
+    <comp lib="0" loc="(650,810)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(300,1020)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="11"/>
+      <a name="incoming" val="11"/>
+    </comp>
+    <comp lib="3" loc="(520,530)" name="Comparator">
+      <a name="width" val="11"/>
+    </comp>
+    <comp lib="1" loc="(1010,520)" name="NOT Gate"/>
+    <comp lib="0" loc="(450,70)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10signed"/>
+    </comp>
+    <comp lib="0" loc="(990,670)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(950,990)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(150,450)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="C_reg"/>
+      <a name="label" val="Cancel_transfer"/>
+    </comp>
+    <comp lib="2" loc="(580,1250)" name="Multiplexer">
+      <a name="width" val="11"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(340,220)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="11"/>
+      <a name="incoming" val="11"/>
+    </comp>
+    <comp lib="2" loc="(1620,140)" name="Multiplexer">
+      <a name="width" val="10"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(550,360)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(80,910)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="11"/>
+      <a name="incoming" val="11"/>
+    </comp>
+    <comp lib="1" loc="(930,480)" name="NOT Gate"/>
+    <comp lib="0" loc="(880,540)" name="Pull Resistor">
+      <a name="facing" val="north"/>
     </comp>
     <comp lib="0" loc="(1060,750)" name="Constant">
       <a name="facing" val="south"/>
       <a name="width" val="10"/>
       <a name="value" val="0x3e7"/>
+    </comp>
+    <comp lib="0" loc="(370,260)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10signed"/>
+    </comp>
+    <comp lib="0" loc="(220,750)" name="Pin">
+      <a name="width" val="11"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="mv_energy"/>
+    </comp>
+    <comp lib="0" loc="(340,750)" name="Splitter">
+      <a name="fanout" val="11"/>
+      <a name="incoming" val="11"/>
+    </comp>
+    <comp lib="0" loc="(910,210)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="1" loc="(610,520)" name="OR Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(1520,420)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="10"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="3" loc="(900,950)" name="Subtractor">
+      <a name="width" val="11"/>
+    </comp>
+    <comp lib="0" loc="(200,250)" name="Pull Resistor"/>
+    <comp lib="0" loc="(1730,200)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(560,1080)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10signed"/>
+    </comp>
+    <comp lib="1" loc="(1070,500)" name="OR Gate">
+      <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="3" loc="(870,170)" name="Adder">
+      <a name="width" val="11"/>
+    </comp>
+    <comp lib="0" loc="(570,740)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="11"/>
+      <a name="value" val="0x419"/>
+    </comp>
+    <comp lib="0" loc="(250,750)" name="Pull Resistor">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="2" loc="(1450,460)" name="Multiplexer">
+      <a name="width" val="10"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(160,140)" name="Pin">
+      <a name="width" val="10"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Energy"/>
+    </comp>
+    <comp lib="0" loc="(260,1130)" name="Splitter">
+      <a name="fanout" val="10"/>
+      <a name="incoming" val="10"/>
+    </comp>
+    <comp lib="0" loc="(1360,520)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(220,1290)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(1680,460)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="10"/>
+      <a name="label" val="C_reg"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="2" loc="(1580,470)" name="Multiplexer">
+      <a name="width" val="10"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1220,730)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(200,450)" name="Pull Resistor"/>
+    <comp lib="0" loc="(160,250)" name="Pin">
+      <a name="width" val="10"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="C_reg"/>
+    </comp>
+    <comp lib="0" loc="(40,1020)" name="Splitter">
+      <a name="fanout" val="10"/>
+      <a name="incoming" val="10"/>
+    </comp>
+    <comp lib="0" loc="(1210,830)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="10"/>
+      <a name="value" val="0x3e7"/>
+    </comp>
+    <comp lib="3" loc="(480,1330)" name="Comparator">
+      <a name="width" val="11"/>
+      <a name="mode" val="unsigned"/>
+    </comp>
+    <comp lib="3" loc="(670,320)" name="Subtractor">
+      <a name="width" val="11"/>
+    </comp>
+    <comp lib="0" loc="(1770,140)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="10"/>
+      <a name="label" val="Energy"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(460,1280)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="11"/>
+      <a name="value" val="0x3e7"/>
+    </comp>
+    <comp lib="0" loc="(970,880)" name="Splitter">
+      <a name="fanout" val="11"/>
+      <a name="incoming" val="11"/>
+    </comp>
+    <comp lib="0" loc="(270,190)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(340,30)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="11"/>
+      <a name="incoming" val="11"/>
+    </comp>
+    <comp lib="3" loc="(450,870)" name="Subtractor">
+      <a name="width" val="11"/>
+    </comp>
+    <comp lib="0" loc="(1150,970)" name="Splitter">
+      <a name="fanout" val="11"/>
+      <a name="incoming" val="11"/>
+    </comp>
+    <comp lib="2" loc="(1430,140)" name="Multiplexer">
+      <a name="width" val="10"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1000,1070)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="11"/>
+      <a name="value" val="0x3e7"/>
+    </comp>
+    <comp lib="0" loc="(680,910)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10signed"/>
+    </comp>
+    <comp lib="3" loc="(610,680)" name="Comparator">
+      <a name="width" val="11"/>
+    </comp>
+    <comp lib="3" loc="(650,880)" name="Subtractor">
+      <a name="width" val="11"/>
+    </comp>
+    <comp lib="0" loc="(720,1220)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="10"/>
+      <a name="incoming" val="10"/>
+    </comp>
+    <comp lib="0" loc="(970,340)" name="Splitter">
+      <a name="fanout" val="11"/>
+      <a name="incoming" val="11"/>
+    </comp>
+    <comp lib="0" loc="(200,140)" name="Pull Resistor"/>
+    <comp lib="0" loc="(270,380)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(740,210)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10signed"/>
+    </comp>
+    <comp lib="0" loc="(440,640)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="11"/>
+      <a name="value" val="0x3e7"/>
+    </comp>
+    <comp lib="0" loc="(180,1020)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="2" loc="(1290,130)" name="Multiplexer">
+      <a name="width" val="10"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(1160,70)" name="Multiplexer">
+      <a name="width" val="10"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1650,510)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(680,1340)" name="Splitter">
+      <a name="fanout" val="11"/>
+      <a name="incoming" val="11"/>
+    </comp>
+    <comp lib="0" loc="(1070,140)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="10"/>
+      <a name="value" val="0x3e7"/>
+    </comp>
+    <comp lib="3" loc="(420,1240)" name="Adder">
+      <a name="width" val="11"/>
+    </comp>
+    <comp lib="3" loc="(520,590)" name="Comparator">
+      <a name="width" val="11"/>
+    </comp>
+    <comp lib="0" loc="(980,200)" name="Splitter">
+      <a name="fanout" val="11"/>
+      <a name="incoming" val="11"/>
     </comp>
   </circuit>
   <circuit name="I_math">
@@ -849,7 +849,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(170,300)" to="(170,310)"/>
     <wire from="(510,300)" to="(680,300)"/>
     <wire from="(390,520)" to="(390,540)"/>
-    <wire from="(810,140)" to="(810,170)"/>
     <wire from="(430,480)" to="(430,500)"/>
     <wire from="(730,310)" to="(770,310)"/>
     <wire from="(950,150)" to="(950,240)"/>
@@ -917,7 +916,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1160,110)" to="(1160,160)"/>
     <wire from="(1110,100)" to="(1120,100)"/>
     <wire from="(750,340)" to="(1230,340)"/>
-    <wire from="(810,80)" to="(810,140)"/>
     <wire from="(880,470)" to="(880,530)"/>
     <wire from="(760,540)" to="(830,540)"/>
     <wire from="(1060,190)" to="(1090,190)"/>
@@ -935,6 +933,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(610,150)" to="(610,280)"/>
     <wire from="(200,560)" to="(250,560)"/>
     <wire from="(910,240)" to="(950,240)"/>
+    <wire from="(810,80)" to="(810,170)"/>
     <wire from="(780,500)" to="(780,520)"/>
     <wire from="(820,460)" to="(820,480)"/>
     <wire from="(720,590)" to="(830,590)"/>
@@ -980,6 +979,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(730,520)" to="(760,520)"/>
     <wire from="(340,140)" to="(340,250)"/>
     <wire from="(460,150)" to="(610,150)"/>
+    <wire from="(690,140)" to="(890,140)"/>
     <wire from="(1130,200)" to="(1160,200)"/>
     <wire from="(1090,90)" to="(1110,90)"/>
     <wire from="(730,540)" to="(740,540)"/>
@@ -990,6 +990,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1160,110)" to="(1200,110)"/>
     <wire from="(1270,130)" to="(1270,160)"/>
     <wire from="(1030,450)" to="(1130,450)"/>
+    <wire from="(690,110)" to="(690,140)"/>
     <wire from="(900,170)" to="(940,170)"/>
     <wire from="(830,300)" to="(1060,300)"/>
     <wire from="(320,290)" to="(430,290)"/>
@@ -1036,112 +1037,43 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(510,300)" to="(510,350)"/>
     <wire from="(1020,530)" to="(1030,530)"/>
     <wire from="(810,80)" to="(820,80)"/>
-    <wire from="(810,140)" to="(890,140)"/>
     <wire from="(320,300)" to="(390,300)"/>
     <wire from="(1270,130)" to="(1290,130)"/>
-    <comp lib="0" loc="(250,560)" name="Pull Resistor">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp loc="(310,550)" name="sum"/>
-    <comp lib="3" loc="(860,90)" name="Subtractor">
-      <a name="width" val="10"/>
-    </comp>
-    <comp lib="0" loc="(1110,310)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="err"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(190,300)" name="Splitter">
-      <a name="fanout" val="4"/>
-      <a name="incoming" val="4"/>
-    </comp>
-    <comp lib="0" loc="(230,250)" name="Splitter">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="0" loc="(570,610)" name="Pull Resistor">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="0" loc="(340,590)" name="Splitter"/>
-    <comp lib="3" loc="(460,150)" name="Comparator">
-      <a name="width" val="2"/>
-      <a name="mode" val="unsigned"/>
-    </comp>
-    <comp lib="1" loc="(1240,200)" name="AND Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(210,480)" name="Pin">
-      <a name="width" val="12"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Dl_4"/>
-      <a name="labelloc" val="south"/>
-    </comp>
     <comp loc="(1020,530)" name="sum"/>
-    <comp lib="0" loc="(850,470)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="12"/>
-      <a name="incoming" val="12"/>
-    </comp>
-    <comp lib="0" loc="(1180,140)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="width" val="10"/>
-      <a name="value" val="0x2"/>
-    </comp>
-    <comp lib="0" loc="(850,250)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="width" val="2"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="3" loc="(470,300)" name="Adder">
-      <a name="width" val="10"/>
-    </comp>
-    <comp lib="3" loc="(910,240)" name="Comparator">
-      <a name="width" val="2"/>
-      <a name="mode" val="unsigned"/>
-    </comp>
-    <comp lib="0" loc="(250,480)" name="Pull Resistor"/>
-    <comp lib="3" loc="(900,180)" name="Comparator">
-      <a name="width" val="10"/>
-      <a name="mode" val="unsigned"/>
-    </comp>
-    <comp lib="0" loc="(160,300)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="type_select"/>
-    </comp>
-    <comp lib="0" loc="(110,230)" name="Pin">
-      <a name="width" val="2"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="player_select"/>
-    </comp>
-    <comp lib="0" loc="(650,440)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="0" loc="(180,120)" name="Pin">
-      <a name="width" val="10"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Energy"/>
-    </comp>
-    <comp lib="2" loc="(1320,120)" name="Multiplexer">
+    <comp lib="2" loc="(940,90)" name="Multiplexer">
       <a name="width" val="10"/>
       <a name="enable" val="false"/>
-    </comp>
-    <comp lib="3" loc="(1130,200)" name="Comparator">
-      <a name="width" val="2"/>
-      <a name="mode" val="unsigned"/>
     </comp>
     <comp lib="0" loc="(490,460)" name="Splitter">
       <a name="facing" val="west"/>
       <a name="fanout" val="12"/>
       <a name="incoming" val="12"/>
     </comp>
-    <comp lib="0" loc="(930,420)" name="Pull Resistor">
-      <a name="facing" val="west"/>
+    <comp lib="0" loc="(970,600)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
     </comp>
-    <comp loc="(320,290)" name="type_math"/>
-    <comp loc="(630,520)" name="sum"/>
-    <comp lib="0" loc="(380,170)" name="Constant">
+    <comp loc="(800,300)" name="sum2"/>
+    <comp lib="0" loc="(190,300)" name="Splitter">
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="0" loc="(110,230)" name="Pin">
+      <a name="width" val="2"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="player_select"/>
+    </comp>
+    <comp lib="0" loc="(510,350)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp loc="(310,550)" name="sum"/>
+    <comp lib="3" loc="(460,150)" name="Comparator">
+      <a name="width" val="2"/>
+      <a name="mode" val="unsigned"/>
+    </comp>
+    <comp lib="0" loc="(340,590)" name="Splitter"/>
+    <comp lib="0" loc="(850,250)" name="Constant">
       <a name="facing" val="south"/>
       <a name="width" val="2"/>
       <a name="value" val="0x0"/>
@@ -1150,36 +1082,28 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="north"/>
       <a name="radix" val="10unsigned"/>
     </comp>
-    <comp lib="2" loc="(1150,110)" name="Multiplexer">
-      <a name="width" val="10"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp loc="(800,300)" name="sum2"/>
-    <comp lib="0" loc="(310,460)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="0" loc="(550,610)" name="Pin">
+    <comp lib="0" loc="(210,480)" name="Pin">
       <a name="width" val="12"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="Dl_1"/>
-      <a name="labelloc" val="north"/>
+      <a name="label" val="Dl_4"/>
+      <a name="labelloc" val="south"/>
     </comp>
-    <comp lib="0" loc="(1010,210)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="width" val="2"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(1070,240)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="2"/>
-      <a name="label" val="player_select"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="0" loc="(1120,40)" name="Probe">
+    <comp lib="0" loc="(250,560)" name="Pull Resistor">
       <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(250,480)" name="Pull Resistor"/>
+    <comp lib="0" loc="(350,550)" name="Splitter">
+      <a name="fanout" val="10"/>
+      <a name="incoming" val="10"/>
+    </comp>
+    <comp lib="3" loc="(470,300)" name="Adder">
+      <a name="width" val="10"/>
+    </comp>
+    <comp lib="0" loc="(910,420)" name="Pin">
+      <a name="width" val="12"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Dl_3"/>
+      <a name="labelloc" val="south"/>
     </comp>
     <comp lib="0" loc="(1350,120)" name="Pin">
       <a name="facing" val="west"/>
@@ -1188,49 +1112,130 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Energy"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="3" loc="(1130,200)" name="Comparator">
+      <a name="width" val="2"/>
+      <a name="mode" val="unsigned"/>
+    </comp>
+    <comp lib="0" loc="(1180,140)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="10"/>
+      <a name="value" val="0x2"/>
+    </comp>
+    <comp lib="0" loc="(180,120)" name="Pin">
+      <a name="width" val="10"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Energy"/>
+    </comp>
+    <comp lib="2" loc="(1150,110)" name="Multiplexer">
+      <a name="width" val="10"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="1" loc="(1040,130)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
     <comp lib="0" loc="(700,600)" name="Splitter"/>
+    <comp lib="0" loc="(160,300)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="type_select"/>
+    </comp>
+    <comp lib="1" loc="(1240,200)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="3" loc="(900,180)" name="Comparator">
+      <a name="width" val="10"/>
+      <a name="mode" val="unsigned"/>
+    </comp>
+    <comp lib="0" loc="(1110,310)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="err"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(930,420)" name="Pull Resistor">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(1090,310)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(550,610)" name="Pin">
+      <a name="width" val="12"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Dl_1"/>
+      <a name="labelloc" val="north"/>
+    </comp>
     <comp lib="0" loc="(200,560)" name="Pin">
       <a name="width" val="12"/>
       <a name="tristate" val="false"/>
       <a name="label" val="Dl_2"/>
       <a name="labelloc" val="south"/>
     </comp>
-    <comp lib="2" loc="(940,90)" name="Multiplexer">
+    <comp lib="0" loc="(230,250)" name="Splitter">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp loc="(320,290)" name="type_math"/>
+    <comp lib="0" loc="(850,470)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="12"/>
+      <a name="incoming" val="12"/>
+    </comp>
+    <comp lib="0" loc="(1120,40)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(1070,240)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="2"/>
+      <a name="label" val="player_select"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(570,610)" name="Pull Resistor">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="2" loc="(1320,120)" name="Multiplexer">
       <a name="width" val="10"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="0" loc="(970,600)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
+    <comp loc="(630,520)" name="sum"/>
+    <comp lib="0" loc="(1010,210)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="2"/>
+      <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(1340,160)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
+    <comp lib="0" loc="(380,170)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="2"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="3" loc="(910,240)" name="Comparator">
+      <a name="width" val="2"/>
+      <a name="mode" val="unsigned"/>
     </comp>
     <comp lib="0" loc="(710,560)" name="Splitter">
       <a name="fanout" val="10"/>
       <a name="incoming" val="10"/>
     </comp>
-    <comp lib="0" loc="(350,550)" name="Splitter">
-      <a name="fanout" val="10"/>
-      <a name="incoming" val="10"/>
-    </comp>
-    <comp lib="0" loc="(510,350)" name="Probe">
+    <comp lib="0" loc="(310,460)" name="Probe">
       <a name="facing" val="north"/>
       <a name="radix" val="10unsigned"/>
     </comp>
-    <comp lib="0" loc="(910,420)" name="Pin">
-      <a name="width" val="12"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Dl_3"/>
-      <a name="labelloc" val="south"/>
+    <comp lib="0" loc="(650,440)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
     </comp>
-    <comp lib="0" loc="(1090,310)" name="Constant">
+    <comp lib="0" loc="(690,110)" name="Constant">
       <a name="facing" val="south"/>
+      <a name="width" val="10"/>
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="1" loc="(1040,130)" name="AND Gate">
-      <a name="inputs" val="2"/>
+    <comp lib="3" loc="(860,90)" name="Subtractor">
+      <a name="width" val="10"/>
+    </comp>
+    <comp lib="0" loc="(1340,160)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
     </comp>
     <comp lib="3" loc="(1240,120)" name="Adder">
       <a name="width" val="10"/>
@@ -1348,6 +1353,75 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(500,230)" to="(630,230)"/>
     <wire from="(810,280)" to="(820,280)"/>
     <wire from="(1220,520)" to="(1240,520)"/>
+    <comp lib="0" loc="(260,340)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="10"/>
+      <a name="incoming" val="10"/>
+    </comp>
+    <comp lib="1" loc="(740,600)" name="NOT Gate"/>
+    <comp lib="0" loc="(1250,560)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="2"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="2" loc="(810,280)" name="Multiplexer">
+      <a name="width" val="10"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1260,320)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(320,30)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="10"/>
+      <a name="incoming" val="10"/>
+    </comp>
+    <comp lib="0" loc="(930,510)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="10"/>
+    </comp>
+    <comp lib="3" loc="(690,290)" name="Subtractor">
+      <a name="width" val="10"/>
+    </comp>
+    <comp lib="0" loc="(830,280)" name="Splitter">
+      <a name="fanout" val="10"/>
+      <a name="incoming" val="10"/>
+    </comp>
+    <comp lib="3" loc="(600,290)" name="Adder">
+      <a name="width" val="10"/>
+    </comp>
+    <comp lib="0" loc="(350,440)" name="Splitter">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="1" loc="(1150,610)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(450,180)" name="Probe">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(410,130)" name="Splitter">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="2" loc="(1330,480)" name="Multiplexer">
+      <a name="width" val="2"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(160,160)" name="Pin">
+      <a name="width" val="12"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Energy_1"/>
+    </comp>
+    <comp lib="3" loc="(1100,420)" name="Adder">
+      <a name="width" val="10"/>
+    </comp>
+    <comp lib="0" loc="(280,160)" name="Splitter">
+      <a name="fanout" val="12"/>
+      <a name="incoming" val="12"/>
+    </comp>
+    <comp lib="1" loc="(950,410)" name="NOT Gate">
+      <a name="width" val="10"/>
+    </comp>
     <comp lib="0" loc="(1300,280)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -1355,102 +1429,18 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Energy"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(450,180)" name="Probe">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="0" loc="(1250,560)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="width" val="2"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(350,50)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="0" loc="(280,160)" name="Splitter">
-      <a name="fanout" val="12"/>
-      <a name="incoming" val="12"/>
-    </comp>
-    <comp lib="2" loc="(810,280)" name="Multiplexer">
-      <a name="width" val="10"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(390,490)" name="Probe">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp lib="3" loc="(600,290)" name="Adder">
-      <a name="width" val="10"/>
-    </comp>
-    <comp lib="0" loc="(160,160)" name="Pin">
-      <a name="width" val="12"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Energy_1"/>
-    </comp>
-    <comp lib="2" loc="(1200,280)" name="Multiplexer">
-      <a name="width" val="10"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="1" loc="(1150,610)" name="AND Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(410,130)" name="Splitter">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="0" loc="(350,440)" name="Splitter">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="0" loc="(1260,320)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="3" loc="(690,290)" name="Subtractor">
-      <a name="width" val="10"/>
-    </comp>
-    <comp lib="0" loc="(220,470)" name="Splitter">
-      <a name="fanout" val="12"/>
-      <a name="incoming" val="12"/>
-    </comp>
-    <comp lib="3" loc="(600,390)" name="Comparator">
-      <a name="width" val="10"/>
-      <a name="mode" val="unsigned"/>
-    </comp>
-    <comp lib="0" loc="(830,280)" name="Splitter">
-      <a name="fanout" val="10"/>
-      <a name="incoming" val="10"/>
-    </comp>
-    <comp lib="0" loc="(290,360)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="1" loc="(740,600)" name="NOT Gate"/>
-    <comp lib="2" loc="(1330,480)" name="Multiplexer">
-      <a name="width" val="2"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(260,340)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="10"/>
-      <a name="incoming" val="10"/>
-    </comp>
-    <comp lib="0" loc="(320,30)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="10"/>
-      <a name="incoming" val="10"/>
-    </comp>
     <comp lib="0" loc="(130,470)" name="Pin">
       <a name="width" val="12"/>
       <a name="tristate" val="false"/>
       <a name="label" val="Energy_2"/>
     </comp>
-    <comp lib="3" loc="(1100,420)" name="Adder">
-      <a name="width" val="10"/>
-    </comp>
     <comp lib="3" loc="(640,450)" name="Comparator">
       <a name="width" val="2"/>
       <a name="mode" val="unsigned"/>
     </comp>
-    <comp lib="1" loc="(950,410)" name="NOT Gate">
-      <a name="width" val="10"/>
+    <comp lib="0" loc="(220,470)" name="Splitter">
+      <a name="fanout" val="12"/>
+      <a name="incoming" val="12"/>
     </comp>
     <comp lib="0" loc="(1360,480)" name="Pin">
       <a name="facing" val="west"/>
@@ -1459,9 +1449,24 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="player_select"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(930,510)" name="Constant">
-      <a name="facing" val="south"/>
+    <comp lib="2" loc="(1200,280)" name="Multiplexer">
       <a name="width" val="10"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="3" loc="(600,390)" name="Comparator">
+      <a name="width" val="10"/>
+      <a name="mode" val="unsigned"/>
+    </comp>
+    <comp lib="0" loc="(390,490)" name="Probe">
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(290,360)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="0" loc="(350,50)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
     </comp>
     <comp lib="2" loc="(1260,480)" name="Multiplexer">
       <a name="width" val="2"/>
@@ -1574,9 +1579,105 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(490,180)" to="(490,360)"/>
     <wire from="(730,320)" to="(730,370)"/>
     <wire from="(660,420)" to="(800,420)"/>
+    <comp lib="0" loc="(230,200)" name="Splitter">
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
     <comp lib="2" loc="(940,300)" name="Multiplexer">
       <a name="width" val="10"/>
       <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(660,420)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="10"/>
+      <a name="value" val="0xe"/>
+    </comp>
+    <comp lib="0" loc="(330,280)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(350,90)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="2"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="2" loc="(780,70)" name="Multiplexer">
+      <a name="width" val="10"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(550,250)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="10"/>
+      <a name="value" val="0x7"/>
+    </comp>
+    <comp lib="3" loc="(470,140)" name="Comparator">
+      <a name="width" val="2"/>
+      <a name="mode" val="unsigned"/>
+    </comp>
+    <comp lib="2" loc="(680,70)" name="Multiplexer">
+      <a name="width" val="10"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(850,300)" name="Multiplexer">
+      <a name="width" val="10"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="2" loc="(880,70)" name="Multiplexer">
+      <a name="width" val="10"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="3" loc="(450,480)" name="Comparator">
+      <a name="width" val="2"/>
+      <a name="mode" val="unsigned"/>
+    </comp>
+    <comp lib="0" loc="(120,100)" name="Pin">
+      <a name="width" val="10"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Energy"/>
+    </comp>
+    <comp lib="0" loc="(1030,120)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
+    </comp>
+    <comp lib="3" loc="(460,380)" name="Comparator">
+      <a name="width" val="2"/>
+      <a name="mode" val="unsigned"/>
+    </comp>
+    <comp lib="2" loc="(970,70)" name="Multiplexer">
+      <a name="width" val="10"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1090,70)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="10"/>
+      <a name="label" val="Energy"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(330,390)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="2"/>
+      <a name="value" val="0x2"/>
+    </comp>
+    <comp lib="0" loc="(320,150)" name="Splitter">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(320,490)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="2"/>
+      <a name="value" val="0x3"/>
+    </comp>
+    <comp lib="3" loc="(460,270)" name="Comparator">
+      <a name="width" val="2"/>
+      <a name="mode" val="unsigned"/>
+    </comp>
+    <comp lib="2" loc="(650,300)" name="Multiplexer">
+      <a name="width" val="10"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(980,350)" name="Probe">
+      <a name="facing" val="north"/>
+      <a name="radix" val="10unsigned"/>
     </comp>
     <comp lib="0" loc="(1000,300)" name="Pin">
       <a name="facing" val="west"/>
@@ -1585,73 +1686,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="Defence"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="3" loc="(460,270)" name="Comparator">
-      <a name="width" val="2"/>
-      <a name="mode" val="unsigned"/>
-    </comp>
-    <comp lib="2" loc="(880,70)" name="Multiplexer">
-      <a name="width" val="10"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(330,390)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="width" val="2"/>
-      <a name="value" val="0x2"/>
-    </comp>
-    <comp lib="0" loc="(230,200)" name="Splitter">
-      <a name="fanout" val="4"/>
-      <a name="incoming" val="4"/>
-    </comp>
-    <comp lib="2" loc="(650,300)" name="Multiplexer">
-      <a name="width" val="10"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(320,150)" name="Splitter">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="2" loc="(680,70)" name="Multiplexer">
-      <a name="width" val="10"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(320,490)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="width" val="2"/>
-      <a name="value" val="0x3"/>
-    </comp>
     <comp lib="0" loc="(190,200)" name="Pin">
       <a name="width" val="4"/>
       <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(550,250)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="width" val="10"/>
-      <a name="value" val="0x7"/>
-    </comp>
-    <comp lib="0" loc="(350,90)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="width" val="2"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="2" loc="(970,70)" name="Multiplexer">
-      <a name="width" val="10"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(980,350)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="0" loc="(1030,120)" name="Probe">
-      <a name="facing" val="north"/>
-      <a name="radix" val="10unsigned"/>
-    </comp>
-    <comp lib="2" loc="(850,300)" name="Multiplexer">
-      <a name="width" val="10"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(660,420)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="width" val="10"/>
-      <a name="value" val="0xe"/>
     </comp>
     <comp lib="2" loc="(750,300)" name="Multiplexer">
       <a name="width" val="10"/>
@@ -1661,38 +1698,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="south"/>
       <a name="width" val="10"/>
       <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="3" loc="(470,140)" name="Comparator">
-      <a name="width" val="2"/>
-      <a name="mode" val="unsigned"/>
-    </comp>
-    <comp lib="0" loc="(1090,70)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="10"/>
-      <a name="label" val="Energy"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="3" loc="(450,480)" name="Comparator">
-      <a name="width" val="2"/>
-      <a name="mode" val="unsigned"/>
-    </comp>
-    <comp lib="3" loc="(460,380)" name="Comparator">
-      <a name="width" val="2"/>
-      <a name="mode" val="unsigned"/>
-    </comp>
-    <comp lib="0" loc="(330,280)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="width" val="2"/>
-    </comp>
-    <comp lib="2" loc="(780,70)" name="Multiplexer">
-      <a name="width" val="10"/>
-      <a name="enable" val="false"/>
-    </comp>
-    <comp lib="0" loc="(120,100)" name="Pin">
-      <a name="width" val="10"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Energy"/>
     </comp>
   </circuit>
   <circuit name="sum2">
@@ -1779,59 +1784,51 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(180,390)" to="(310,390)"/>
     <wire from="(180,350)" to="(310,350)"/>
     <wire from="(340,190)" to="(540,190)"/>
-    <comp lib="0" loc="(350,10)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="12"/>
-      <a name="incoming" val="12"/>
-    </comp>
-    <comp lib="0" loc="(480,220)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="width" val="2"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp loc="(510,250)" name="sum"/>
-    <comp lib="0" loc="(550,330)" name="Constant">
-      <a name="facing" val="south"/>
-      <a name="width" val="10"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="1" loc="(750,210)" name="AND Gate">
-      <a name="inputs" val="2"/>
-    </comp>
     <comp lib="0" loc="(110,520)" name="Splitter"/>
-    <comp lib="0" loc="(340,190)" name="Splitter">
-      <a name="facing" val="west"/>
-    </comp>
     <comp lib="0" loc="(160,420)" name="Pin">
       <a name="width" val="10"/>
       <a name="tristate" val="false"/>
       <a name="label" val="Energy"/>
     </comp>
-    <comp lib="0" loc="(210,120)" name="Pin">
-      <a name="width" val="10"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Energy_cell"/>
+    <comp lib="0" loc="(330,310)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="12"/>
+      <a name="incoming" val="12"/>
     </comp>
     <comp lib="0" loc="(160,260)" name="Splitter"/>
     <comp lib="3" loc="(580,200)" name="Comparator">
       <a name="width" val="2"/>
       <a name="mode" val="unsigned"/>
     </comp>
+    <comp loc="(510,250)" name="sum"/>
     <comp lib="0" loc="(160,420)" name="Splitter">
       <a name="fanout" val="10"/>
       <a name="incoming" val="10"/>
     </comp>
-    <comp lib="0" loc="(960,150)" name="Pin">
+    <comp lib="1" loc="(750,210)" name="AND Gate">
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="0" loc="(990,270)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
-      <a name="width" val="10"/>
-      <a name="label" val="Energy"/>
+      <a name="width" val="2"/>
+      <a name="label" val="player_select"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(330,310)" name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="fanout" val="12"/>
-      <a name="incoming" val="12"/>
+    <comp lib="0" loc="(130,280)" name="Pin">
+      <a name="width" val="2"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Player_select"/>
+    </comp>
+    <comp lib="0" loc="(480,220)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="2"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(210,120)" name="Pin">
+      <a name="width" val="10"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Energy_cell"/>
     </comp>
     <comp lib="0" loc="(260,480)" name="Splitter">
       <a name="facing" val="west"/>
@@ -1841,29 +1838,37 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="tristate" val="false"/>
       <a name="label" val="player_select2"/>
     </comp>
-    <comp lib="0" loc="(270,120)" name="Splitter">
-      <a name="fanout" val="10"/>
-      <a name="incoming" val="10"/>
+    <comp lib="3" loc="(650,260)" name="Comparator">
+      <a name="width" val="10"/>
+      <a name="mode" val="unsigned"/>
+    </comp>
+    <comp lib="0" loc="(550,330)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="10"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(960,150)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="10"/>
+      <a name="label" val="Energy"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(340,190)" name="Splitter">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(350,10)" name="Splitter">
+      <a name="facing" val="west"/>
+      <a name="fanout" val="12"/>
+      <a name="incoming" val="12"/>
     </comp>
     <comp lib="2" loc="(890,270)" name="Multiplexer">
       <a name="width" val="2"/>
       <a name="enable" val="false"/>
     </comp>
-    <comp lib="0" loc="(990,270)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="width" val="2"/>
-      <a name="label" val="player_select"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="3" loc="(650,260)" name="Comparator">
-      <a name="width" val="10"/>
-      <a name="mode" val="unsigned"/>
-    </comp>
-    <comp lib="0" loc="(130,280)" name="Pin">
-      <a name="width" val="2"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Player_select"/>
+    <comp lib="0" loc="(270,120)" name="Splitter">
+      <a name="fanout" val="10"/>
+      <a name="incoming" val="10"/>
     </comp>
   </circuit>
 </project>
