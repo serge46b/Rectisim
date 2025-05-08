@@ -87,47 +87,52 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(440,270)" to="(660,270)"/>
+    <wire from="(670,280)" to="(670,320)"/>
     <wire from="(650,260)" to="(650,400)"/>
     <wire from="(280,190)" to="(280,320)"/>
     <wire from="(210,170)" to="(270,170)"/>
+    <wire from="(330,270)" to="(350,270)"/>
     <wire from="(40,210)" to="(40,220)"/>
+    <wire from="(420,260)" to="(440,260)"/>
     <wire from="(300,380)" to="(420,380)"/>
+    <wire from="(360,280)" to="(360,320)"/>
     <wire from="(360,320)" to="(670,320)"/>
     <wire from="(650,260)" to="(690,260)"/>
-    <wire from="(290,190)" to="(290,400)"/>
-    <wire from="(290,400)" to="(650,400)"/>
-    <wire from="(440,270)" to="(660,270)"/>
-    <wire from="(670,280)" to="(670,320)"/>
-    <wire from="(330,270)" to="(350,270)"/>
-    <wire from="(420,260)" to="(440,260)"/>
-    <wire from="(360,280)" to="(360,320)"/>
     <wire from="(30,200)" to="(170,200)"/>
     <wire from="(280,320)" to="(360,320)"/>
+    <wire from="(290,190)" to="(290,400)"/>
     <wire from="(30,220)" to="(40,220)"/>
     <wire from="(330,210)" to="(330,270)"/>
     <wire from="(300,190)" to="(300,380)"/>
+    <wire from="(290,400)" to="(650,400)"/>
     <wire from="(680,270)" to="(690,270)"/>
     <wire from="(40,210)" to="(170,210)"/>
     <wire from="(420,260)" to="(420,380)"/>
     <wire from="(370,270)" to="(440,270)"/>
+    <comp lib="1" loc="(680,270)" name="Controlled Buffer">
+      <a name="width" val="2"/>
+    </comp>
+    <comp loc="(700,250)" name="Disign"/>
+    <comp lib="7" loc="(200,200)" name="input shifter"/>
+    <comp lib="0" loc="(30,200)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp loc="(450,250)" name="Disign"/>
     <comp lib="0" loc="(270,170)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="fanout" val="5"/>
       <a name="incoming" val="5"/>
     </comp>
-    <comp loc="(700,250)" name="Disign"/>
+    <comp lib="1" loc="(370,270)" name="Controlled Buffer">
+      <a name="width" val="2"/>
+    </comp>
     <comp lib="5" loc="(700,250)" name="DotMatrix">
       <a name="matrixcols" val="15"/>
       <a name="matrixrows" val="15"/>
     </comp>
-    <comp lib="1" loc="(370,270)" name="Controlled Buffer">
-      <a name="width" val="2"/>
-    </comp>
-    <comp lib="0" loc="(30,200)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(30,220)" name="Pin">
-      <a name="tristate" val="false"/>
+    <comp lib="0" loc="(330,210)" name="Splitter">
+      <a name="facing" val="north"/>
     </comp>
     <comp lib="0" loc="(210,170)" name="Pin">
       <a name="width" val="5"/>
@@ -137,13 +142,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="15"/>
       <a name="matrixrows" val="15"/>
     </comp>
-    <comp lib="7" loc="(200,200)" name="input shifter"/>
-    <comp lib="0" loc="(330,210)" name="Splitter">
-      <a name="facing" val="north"/>
-    </comp>
-    <comp loc="(450,250)" name="Disign"/>
-    <comp lib="1" loc="(680,270)" name="Controlled Buffer">
-      <a name="width" val="2"/>
+    <comp lib="0" loc="(30,220)" name="Pin">
+      <a name="tristate" val="false"/>
     </comp>
   </circuit>
   <circuit name="Disign">
@@ -488,71 +488,343 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(490,320)" to="(880,320)"/>
     <wire from="(1210,320)" to="(1550,320)"/>
     <wire from="(1470,540)" to="(1470,580)"/>
-    <comp lib="0" loc="(480,70)" name="Pin">
+    <comp lib="0" loc="(360,70)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="15"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(1230,580)" name="Constant">
+    <comp lib="0" loc="(920,560)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x2412"/>
+    </comp>
+    <comp lib="0" loc="(1470,580)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
       <a name="value" val="0x140"/>
     </comp>
-    <comp lib="0" loc="(1830,560)" name="Constant">
+    <comp lib="0" loc="(510,460)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(1670,560)" name="Constant">
+    <comp lib="0" loc="(590,380)" name="Transistor">
+      <a name="type" val="n"/>
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
-      <a name="value" val="0x1ffe"/>
     </comp>
-    <comp lib="0" loc="(980,580)" name="Constant">
+    <comp lib="0" loc="(440,110)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="15"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1650,580)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
-      <a name="value" val="0x2a82"/>
+      <a name="value" val="0xe00"/>
+    </comp>
+    <comp lib="0" loc="(1610,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1810,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(350,110)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="15"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1590,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1410,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1310,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1630,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
     </comp>
     <comp lib="0" loc="(530,380)" name="Transistor">
       <a name="type" val="n"/>
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
     </comp>
-    <comp lib="0" loc="(900,580)" name="Constant">
+    <comp lib="0" loc="(1120,500)" name="Transistor">
+      <a name="type" val="n"/>
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
-      <a name="value" val="0x180c"/>
     </comp>
-    <comp lib="0" loc="(1060,580)" name="Constant">
+    <comp lib="0" loc="(450,70)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="15"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(590,460)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
-      <a name="value" val="0x2aa2"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(480,70)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="15"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1490,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(960,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1100,580)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x2c02"/>
+    </comp>
+    <comp lib="0" loc="(460,150)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="15"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(650,380)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1830,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(960,560)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x383a"/>
+    </comp>
+    <comp lib="0" loc="(1770,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1390,580)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x1084"/>
+    </comp>
+    <comp lib="0" loc="(940,580)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x23d6"/>
+    </comp>
+    <comp lib="0" loc="(1350,580)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x43e1"/>
+    </comp>
+    <comp lib="0" loc="(470,110)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="15"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(390,70)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="15"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1330,560)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x21b2"/>
+    </comp>
+    <comp lib="0" loc="(50,580)" name="Pin">
+      <a name="width" val="2"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="1" loc="(140,510)" name="Controlled Buffer">
+      <a name="facing" val="north"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(900,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1370,560)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x26c2"/>
+    </comp>
+    <comp lib="0" loc="(920,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1470,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1750,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1140,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
     </comp>
     <comp lib="0" loc="(650,440)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(510,380)" name="Transistor">
+    <comp lib="0" loc="(1290,560)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(530,440)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(1490,560)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x80"/>
+    </comp>
+    <comp lib="0" loc="(1290,500)" name="Transistor">
       <a name="type" val="n"/>
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
     </comp>
-    <comp lib="0" loc="(710,380)" name="Transistor">
+    <comp lib="0" loc="(1060,500)" name="Transistor">
       <a name="type" val="n"/>
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
     </comp>
-    <comp lib="0" loc="(1750,560)" name="Constant">
-      <a name="facing" val="north"/>
+    <comp lib="0" loc="(400,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
       <a name="width" val="15"/>
-      <a name="value" val="0x700"/>
+      <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(1610,580)" name="Constant">
+    <comp lib="0" loc="(730,380)" name="Transistor">
+      <a name="type" val="n"/>
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
-      <a name="value" val="0x300"/>
+    </comp>
+    <comp lib="0" loc="(410,80)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="15"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1080,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1730,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(980,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(880,560)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(1330,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1830,560)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(1370,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(770,380)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1160,560)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(1000,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1250,560)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x220"/>
+    </comp>
+    <comp lib="0" loc="(1430,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(880,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1310,580)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x1084"/>
+    </comp>
+    <comp lib="0" loc="(1080,560)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x2882"/>
+    </comp>
+    <comp lib="0" loc="(750,460)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x0"/>
     </comp>
     <comp lib="0" loc="(420,70)" name="Pin">
       <a name="facing" val="south"/>
@@ -560,17 +832,32 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="15"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(1790,500)" name="Transistor">
-      <a name="type" val="n"/>
+    <comp lib="0" loc="(1590,560)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
+      <a name="value" val="0x100"/>
     </comp>
-    <comp lib="0" loc="(1590,500)" name="Transistor">
-      <a name="type" val="n"/>
+    <comp lib="0" loc="(610,440)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
+      <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(1430,580)" name="Constant">
+    <comp lib="0" loc="(1570,580)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(490,440)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(1770,580)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x300"/>
+    </comp>
+    <comp lib="0" loc="(570,440)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
       <a name="value" val="0x0"/>
@@ -584,195 +871,35 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="15"/>
       <a name="value" val="0x2bc4"/>
     </comp>
-    <comp lib="0" loc="(1630,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(340,150)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="15"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(730,440)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(1390,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1100,580)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x2c02"/>
-    </comp>
-    <comp lib="0" loc="(1770,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(510,460)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(1370,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(550,460)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(50,580)" name="Pin">
-      <a name="width" val="2"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(880,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(390,70)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="15"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(50,550)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(360,70)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="15"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(1000,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1670,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1490,560)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x80"/>
-    </comp>
-    <comp lib="0" loc="(610,440)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(1210,560)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x80"/>
-    </comp>
-    <comp lib="0" loc="(1750,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(530,440)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(140,490)" name="Pull Resistor">
-      <a name="facing" val="east"/>
-    </comp>
-    <comp lib="0" loc="(1020,580)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x2aa2"/>
-    </comp>
-    <comp lib="0" loc="(880,560)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(470,110)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="15"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(770,440)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(920,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
     <comp lib="0" loc="(1710,560)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
       <a name="value" val="0x1ffe"/>
     </comp>
-    <comp lib="5" loc="(180,170)" name="DotMatrix">
-      <a name="matrixcols" val="15"/>
-      <a name="matrixrows" val="15"/>
+    <comp lib="0" loc="(1670,560)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x1ffe"/>
+    </comp>
+    <comp lib="0" loc="(1710,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(510,380)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
     </comp>
     <comp lib="0" loc="(1550,500)" name="Transistor">
       <a name="type" val="n"/>
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
     </comp>
-    <comp lib="0" loc="(1000,560)" name="Constant">
+    <comp lib="0" loc="(1210,560)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
-      <a name="value" val="0x2aa2"/>
-    </comp>
-    <comp lib="0" loc="(1410,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(450,70)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="15"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(1450,560)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x220"/>
-    </comp>
-    <comp lib="0" loc="(380,110)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="15"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(690,380)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1210,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1040,560)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x2a22"/>
+      <a name="value" val="0x80"/>
     </comp>
     <comp lib="0" loc="(430,150)" name="Pin">
       <a name="facing" val="south"/>
@@ -785,129 +912,23 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="15"/>
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(1250,500)" name="Transistor">
-      <a name="type" val="n"/>
+    <comp lib="0" loc="(900,580)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
+      <a name="value" val="0x180c"/>
     </comp>
-    <comp lib="0" loc="(1590,560)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x100"/>
-    </comp>
-    <comp lib="0" loc="(1080,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1080,560)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x2882"/>
-    </comp>
-    <comp lib="0" loc="(1290,560)" name="Constant">
+    <comp lib="0" loc="(550,460)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(1450,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1570,580)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(1370,560)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x26c2"/>
-    </comp>
-    <comp lib="0" loc="(1270,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(410,80)" name="Pin">
+    <comp lib="0" loc="(370,150)" name="Pin">
       <a name="facing" val="south"/>
       <a name="output" val="true"/>
       <a name="width" val="15"/>
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(1630,560)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x700"/>
-    </comp>
-    <comp lib="0" loc="(960,560)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x383a"/>
-    </comp>
-    <comp lib="0" loc="(1490,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1830,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(630,460)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(460,150)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="15"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(1790,560)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x100"/>
-    </comp>
-    <comp lib="0" loc="(1390,580)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x1084"/>
-    </comp>
-    <comp lib="0" loc="(1020,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1350,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1570,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1650,580)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0xe00"/>
-    </comp>
-    <comp lib="0" loc="(1250,560)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x220"/>
-    </comp>
-    <comp lib="0" loc="(1060,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1330,500)" name="Transistor">
+    <comp lib="0" loc="(670,380)" name="Transistor">
       <a name="type" val="n"/>
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
@@ -917,94 +938,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
     </comp>
-    <comp lib="0" loc="(370,150)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="15"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(1310,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(750,380)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1310,580)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x1084"/>
-    </comp>
-    <comp lib="0" loc="(1160,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(610,380)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(670,380)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1040,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1730,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1810,580)" name="Constant">
+    <comp lib="0" loc="(730,440)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(1690,500)" name="Transistor">
+    <comp lib="0" loc="(710,380)" name="Transistor">
       <a name="type" val="n"/>
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
     </comp>
-    <comp lib="0" loc="(900,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(570,380)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(400,120)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="15"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(1290,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1730,580)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0xe00"/>
-    </comp>
-    <comp lib="0" loc="(590,380)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(690,440)" name="Constant">
+    <comp lib="0" loc="(1430,580)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
       <a name="value" val="0x0"/>
@@ -1014,118 +958,64 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
     </comp>
-    <comp lib="0" loc="(1430,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(750,460)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(980,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1470,580)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x140"/>
-    </comp>
-    <comp lib="0" loc="(730,380)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1350,580)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x43e1"/>
-    </comp>
-    <comp lib="0" loc="(1810,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1330,560)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x21b2"/>
-    </comp>
-    <comp lib="0" loc="(1650,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1140,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1120,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(590,460)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(1770,580)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x300"/>
-    </comp>
-    <comp lib="0" loc="(490,440)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(570,440)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x0"/>
-    </comp>
-    <comp lib="0" loc="(350,110)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="15"/>
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(770,380)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(650,380)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1710,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(1470,500)" name="Transistor">
-      <a name="type" val="n"/>
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-    </comp>
     <comp lib="0" loc="(1550,560)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(1410,560)" name="Constant">
+    <comp lib="0" loc="(50,550)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1270,580)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
       <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(1610,500)" name="Transistor">
+    <comp lib="0" loc="(1060,580)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x2aa2"/>
+    </comp>
+    <comp lib="0" loc="(750,380)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1690,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1160,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1390,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="5" loc="(180,170)" name="DotMatrix">
+      <a name="matrixcols" val="15"/>
+      <a name="matrixrows" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1630,560)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x700"/>
+    </comp>
+    <comp lib="0" loc="(630,460)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(1020,580)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x2aa2"/>
+    </comp>
+    <comp lib="0" loc="(610,380)" name="Transistor">
       <a name="type" val="n"/>
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
@@ -1135,31 +1025,43 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="15"/>
       <a name="value" val="0x3ffe"/>
     </comp>
-    <comp lib="0" loc="(1230,500)" name="Transistor">
+    <comp lib="0" loc="(340,150)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="15"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1570,500)" name="Transistor">
       <a name="type" val="n"/>
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
     </comp>
-    <comp lib="0" loc="(1160,560)" name="Constant">
+    <comp lib="0" loc="(570,380)" name="Transistor">
+      <a name="type" val="n"/>
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
-      <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(1270,580)" name="Constant">
+    <comp lib="0" loc="(690,380)" name="Transistor">
+      <a name="type" val="n"/>
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
-      <a name="value" val="0x0"/>
     </comp>
-    <comp lib="0" loc="(920,560)" name="Constant">
+    <comp lib="0" loc="(1270,500)" name="Transistor">
+      <a name="type" val="n"/>
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
-      <a name="value" val="0x2412"/>
     </comp>
-    <comp lib="1" loc="(140,510)" name="Controlled Buffer">
+    <comp lib="0" loc="(1730,580)" name="Constant">
       <a name="facing" val="north"/>
-      <a name="width" val="2"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0xe00"/>
     </comp>
-    <comp lib="0" loc="(670,460)" name="Constant">
+    <comp lib="0" loc="(1750,560)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x700"/>
+    </comp>
+    <comp lib="0" loc="(690,440)" name="Constant">
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
       <a name="value" val="0x0"/>
@@ -1169,12 +1071,116 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="15"/>
       <a name="value" val="0x1838"/>
     </comp>
-    <comp lib="0" loc="(1100,500)" name="Transistor">
+    <comp lib="0" loc="(1230,500)" name="Transistor">
       <a name="type" val="n"/>
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
     </comp>
-    <comp lib="0" loc="(960,500)" name="Transistor">
+    <comp lib="0" loc="(1410,560)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(380,110)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="output" val="true"/>
+      <a name="width" val="15"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1040,560)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x2a22"/>
+    </comp>
+    <comp lib="0" loc="(1650,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1000,560)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x2aa2"/>
+    </comp>
+    <comp lib="0" loc="(630,380)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1020,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1670,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1450,560)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x220"/>
+    </comp>
+    <comp lib="0" loc="(1350,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1230,580)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x140"/>
+    </comp>
+    <comp lib="0" loc="(1250,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1810,580)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(1450,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1790,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(140,490)" name="Pull Resistor">
+      <a name="facing" val="east"/>
+    </comp>
+    <comp lib="0" loc="(770,440)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(670,460)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(980,580)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x2a82"/>
+    </comp>
+    <comp lib="0" loc="(1210,500)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+    </comp>
+    <comp lib="0" loc="(1790,560)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x100"/>
+    </comp>
+    <comp lib="0" loc="(1100,500)" name="Transistor">
       <a name="type" val="n"/>
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
@@ -1184,21 +1190,15 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
     </comp>
-    <comp lib="0" loc="(630,380)" name="Transistor">
+    <comp lib="0" loc="(1610,580)" name="Constant">
+      <a name="facing" val="north"/>
+      <a name="width" val="15"/>
+      <a name="value" val="0x300"/>
+    </comp>
+    <comp lib="0" loc="(1040,500)" name="Transistor">
       <a name="type" val="n"/>
       <a name="facing" val="north"/>
       <a name="width" val="15"/>
-    </comp>
-    <comp lib="0" loc="(940,580)" name="Constant">
-      <a name="facing" val="north"/>
-      <a name="width" val="15"/>
-      <a name="value" val="0x23d6"/>
-    </comp>
-    <comp lib="0" loc="(440,110)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="output" val="true"/>
-      <a name="width" val="15"/>
-      <a name="tristate" val="false"/>
     </comp>
   </circuit>
 </project>
