@@ -11,6 +11,9 @@ main:
 	ldi r0, 0x01
 	ldi r1, 0x01
 	jsr page_call
+	ldi r0, 0x01
+	ldi r1, 0x02
+	jsr page_call
 	halt
 page_call: ext
 end

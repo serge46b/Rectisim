@@ -39,7 +39,7 @@ IO_CCS_reset>
 IO_SPI_send_cmd>
 	push r1
 	push r0
-	ldi r0, 0b00101000
+	ldi r0, 0b00111000
 	jsr IO_SPI_send_predef
 	pop r0
 	ldi r1, IO_Uni1

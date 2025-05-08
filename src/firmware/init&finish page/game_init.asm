@@ -13,7 +13,7 @@ game_init:
 	ldi r0, IO_BC_ctrl
 	ldi r1, 0b00001000
 	st r0, r1
-	ldi r0, 0b00101000
+	ldi r0, 0b00111000
 	jsr IO_SPI_send_predef
 	ldi r0, IO_UniCS
 	ldi r1, 0b10000011
@@ -29,15 +29,14 @@ game_init:
 	player_select:
 		dec r3
 		jsr IO_CCS_reset
-		ldi r0, 0b00100000
+		ldi r0, 0b00110000
 		jsr IO_SPI_send_predef
 		ldi r0, IO_BC_ctrl
 		ldi r1, 0b00000100
 		st r0, r1
 		jsr IO_CCS_reset
-		ldi r0, 0b00101000
+		ldi r0, 0b00111000
 		jsr IO_SPI_send_predef
-		st r0, r1
 		ldi r0, IO_BC_ctrl
 		if
 			tst r3
@@ -58,12 +57,15 @@ game_init:
 		fi
 		st r0, r2	
 		ldi r0, IO_Uni2
-		st r0, r1	
-		ldi r0, 0b00001011
-		ldi r1, 0b00000001
-		jsr IO_SPI_send_cmd
+		st r0, r1
+		inc r0
+		ldi r1, 0b00001011
+		st r0, r1
+		ldi r0, IO_SPI_KBD_ctrl
+		ldi r1, 0b00001101
+		st r0, r1
 		jsr IO_CCS_reset
-		ldi r0, 0b00101000
+		ldi r0, 0b00111000
 		jsr IO_SPI_send_predef
 		ldi r0, IO_Uni1
 		ldi r1, 0b11101000
@@ -79,7 +81,29 @@ game_init:
 	ldi r0, IO_DBG
 	ldi r1, 0b00000010
 	st r0, r1
+	clr r0
+	ld r0, r1
+	ldi r0, IO_CSC
+	ld r0, r2
+	st r0, r1
+	ldi r0, 0x02
+	st r0, r2
+	ldi r0, 0x01
+	ld r0, r1
+	ldi r0, IO_CSR
+	ld r0, r2
+	st r0, r1
+	ldi r0, 0x03
+	st r0, r2	
+	ldi r0, IO_BC_ctrl
+	ldi r1, 0b10000000
+	st r0, r1
+	ldi r0, IO_BC_ctrl
+	clr r1
+	st r0, r1
 	br page_rts
+
+
 	
 IO_DBG: ext
 IO_CSR: ext
@@ -91,7 +115,6 @@ IO_SPI_KBD_ctrl: ext
 IO_UniCS: ext
 
 IO_SPI_send_predef: ext
-IO_SPI_send_cmd: ext
 IO_clrCCS: ext
 IO_CCS_reset: ext
 
