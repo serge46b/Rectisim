@@ -21,8 +21,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="north"/>
     </tool>
     <tool name="Constant">
-      <a name="width" val="8"/>
-      <a name="value" val="0x80"/>
+      <a name="facing" val="south"/>
     </tool>
   </lib>
   <lib desc="#Gates" name="1">
@@ -79,7 +78,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
 </a>
     </tool>
   </lib>
-  <lib desc="#I/O" name="5"/>
+  <lib desc="#I/O" name="5">
+    <tool name="LED">
+      <a name="facing" val="north"/>
+    </tool>
+  </lib>
   <lib desc="#Base" name="6">
     <tool name="Text Tool">
       <a name="text" val=""/>
@@ -93,6 +96,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   <lib desc="file#SPI interface.circ" name="9"/>
   <lib desc="file#input controller.circ" name="10"/>
   <lib desc="file#MCU.circ" name="11"/>
+  <lib desc="file#people_controller.circ" name="12"/>
   <main name="main"/>
   <options>
     <a name="gateUndefined" val="ignore"/>
@@ -524,6 +528,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(190,810)" to="(230,810)"/>
     <wire from="(2900,830)" to="(2900,2160)"/>
     <wire from="(2730,2620)" to="(2730,2630)"/>
+    <wire from="(840,520)" to="(860,520)"/>
     <wire from="(910,2830)" to="(930,2830)"/>
     <wire from="(1400,1410)" to="(1410,1410)"/>
     <wire from="(460,130)" to="(490,130)"/>
@@ -579,6 +584,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1590,2470)" to="(1630,2470)"/>
     <wire from="(1000,190)" to="(1000,200)"/>
     <wire from="(2660,1960)" to="(2680,1960)"/>
+    <wire from="(470,360)" to="(470,490)"/>
     <wire from="(420,330)" to="(470,330)"/>
     <wire from="(220,1330)" to="(220,1340)"/>
     <wire from="(1350,2140)" to="(1350,2170)"/>
@@ -596,6 +602,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(1230,2740)" to="(1280,2740)"/>
     <wire from="(1320,190)" to="(1320,200)"/>
     <wire from="(1400,1990)" to="(1410,1990)"/>
+    <wire from="(880,500)" to="(900,500)"/>
     <wire from="(2640,2470)" to="(2640,2480)"/>
     <wire from="(2730,960)" to="(2730,970)"/>
     <wire from="(1050,1960)" to="(1060,1960)"/>
@@ -772,6 +779,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(190,1080)" to="(230,1080)"/>
     <wire from="(300,2700)" to="(300,2730)"/>
     <wire from="(1350,1510)" to="(1350,1520)"/>
+    <wire from="(880,510)" to="(900,510)"/>
     <wire from="(910,860)" to="(930,860)"/>
     <wire from="(570,790)" to="(570,960)"/>
     <wire from="(890,2430)" to="(920,2430)"/>
@@ -1153,6 +1161,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(540,810)" to="(580,810)"/>
     <wire from="(540,1230)" to="(540,1320)"/>
     <wire from="(1590,810)" to="(1590,820)"/>
+    <wire from="(470,490)" to="(900,490)"/>
     <wire from="(2100,1440)" to="(2110,1440)"/>
     <wire from="(1290,190)" to="(1290,200)"/>
     <wire from="(280,2700)" to="(280,2730)"/>
@@ -1355,6 +1364,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(990,220)" to="(990,270)"/>
     <wire from="(850,2180)" to="(930,2180)"/>
     <wire from="(530,2760)" to="(540,2760)"/>
+    <comp lib="8" loc="(1260,2550)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(1990,1200)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -1375,13 +1385,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
+    <comp lib="8" loc="(2310,1720)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(1580,1630)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="8" loc="(2750,2140)" name="otladka__^v"/>
-    <comp lib="8" loc="(1260,2830)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(1610,890)" name="otladka__&lt;&gt;"/>
     <comp lib="7" loc="(940,1120)" name="Cell controller"/>
     <comp lib="7" loc="(2340,850)" name="Cell controller"/>
     <comp lib="5" loc="(240,1120)" name="DotMatrix">
@@ -1415,6 +1425,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
+    <comp lib="8" loc="(2310,890)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(1290,2310)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -1430,7 +1441,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="8" loc="(1000,1590)" name="otladka__^v"/>
+    <comp lib="8" loc="(2660,2270)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(1990,1400)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
@@ -1447,13 +1458,14 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
+    <comp lib="8" loc="(2750,1310)" name="otladka__^v"/>
+    <comp lib="8" loc="(1350,2420)" name="otladka__^v"/>
     <comp lib="5" loc="(940,2230)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="8" loc="(2750,1870)" name="otladka__^v"/>
     <comp lib="0" loc="(2280,1070)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
@@ -1463,14 +1475,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
-    <comp lib="8" loc="(2310,1720)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(560,2550)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(900,1030)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
-    <comp lib="8" loc="(650,1310)" name="otladka__^v"/>
     <comp lib="7" loc="(1640,2230)" name="Cell controller"/>
-    <comp lib="8" loc="(2050,2700)" name="otladka__^v"/>
+    <comp lib="8" loc="(1700,2140)" name="otladka__^v"/>
     <comp lib="0" loc="(2630,2760)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
@@ -1497,6 +1508,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
+    <comp lib="8" loc="(2660,2830)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(940,1120)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
@@ -1510,7 +1522,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(2660,2270)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(2310,1160)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(2400,2700)" name="otladka__^v"/>
     <comp lib="5" loc="(1640,1220)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -1523,7 +1536,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(1700,1590)" name="otladka__^v"/>
+    <comp lib="8" loc="(1350,1310)" name="otladka__^v"/>
     <comp lib="5" loc="(1070,1170)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -1532,7 +1545,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
-    <comp lib="8" loc="(1960,1720)" name="otladka__&lt;&gt;"/>
     <comp lib="7" loc="(1990,2230)" name="Cell controller"/>
     <comp lib="5" loc="(1640,2050)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
@@ -1546,14 +1558,14 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(2750,1040)" name="otladka__^v"/>
+    <comp lib="8" loc="(2660,1720)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(2660,1990)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(1990,1500)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(650,1870)" name="otladka__^v"/>
     <comp lib="5" loc="(590,2330)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -1566,7 +1578,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(1260,2270)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(2050,1870)" name="otladka__^v"/>
     <comp lib="0" loc="(1930,1650)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
@@ -1590,7 +1602,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
-    <comp lib="11" loc="(420,310)" name="MCU v2"/>
+    <comp lib="8" loc="(920,200)" name="Output_big_numder"/>
     <comp lib="5" loc="(1250,190)" name="DotMatrix">
       <a name="matrixcols" val="9"/>
       <a name="matrixrows" val="15"/>
@@ -1618,7 +1630,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="8" loc="(920,200)" name="Output_big_numder"/>
     <comp lib="7" loc="(2690,2230)" name="Cell controller"/>
     <comp lib="0" loc="(530,800)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -1651,8 +1662,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="8" loc="(2750,2420)" name="otladka__^v"/>
-    <comp lib="8" loc="(300,1870)" name="otladka__^v"/>
     <comp lib="5" loc="(1640,1120)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
@@ -1665,13 +1674,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
+    <comp lib="0" loc="(860,520)" name="Splitter"/>
     <comp lib="5" loc="(1290,2050)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(1350,1310)" name="otladka__^v"/>
     <comp lib="5" loc="(1250,1300)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -1681,7 +1690,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="8" loc="(1960,1160)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(1640,2610)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -1694,6 +1702,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
+    <comp lib="8" loc="(1000,1310)" name="otladka__^v"/>
     <comp lib="0" loc="(1930,2760)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
@@ -1712,11 +1721,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
-    <comp lib="8" loc="(1260,1720)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(180,1090)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
+    <comp lib="8" loc="(2310,1990)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(850,1370)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
@@ -1726,7 +1735,14 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
+    <comp lib="8" loc="(1700,1870)" name="otladka__^v"/>
     <comp lib="0" loc="(2280,2180)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="2"/>
+      <a name="label" val="MOSI"/>
+    </comp>
+    <comp lib="8" loc="(1960,1720)" name="otladka__&lt;&gt;"/>
+    <comp lib="0" loc="(840,520)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
@@ -1737,6 +1753,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
+    <comp lib="8" loc="(1260,2830)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(1770,900)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -1755,7 +1772,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(910,1720)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(240,2870)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -1793,6 +1809,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
+    <comp lib="8" loc="(2660,1440)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(1990,2610)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -1804,7 +1821,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="8" loc="(2660,1160)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(940,2050)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -1843,6 +1859,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
+    <comp lib="11" loc="(420,580)" name="Field cahce"/>
     <comp lib="5" loc="(1640,1780)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -1864,7 +1881,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="8" loc="(650,1590)" name="otladka__^v"/>
     <comp lib="5" loc="(1420,1170)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -1905,7 +1921,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
-    <comp lib="8" loc="(2310,890)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(2750,1590)" name="otladka__^v"/>
     <comp lib="5" loc="(2650,1030)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -1916,6 +1932,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
+    <comp lib="8" loc="(2050,2140)" name="otladka__^v"/>
     <comp lib="5" loc="(590,1760)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -1935,7 +1952,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="offcolor" val="#ffffff"/>
     </comp>
     <comp lib="7" loc="(590,2790)" name="Cell controller"/>
-    <comp lib="8" loc="(1610,2270)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(1990,2510)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
@@ -1974,7 +1990,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="8" loc="(1000,2140)" name="otladka__^v"/>
     <comp lib="5" loc="(2690,1500)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -1987,7 +2002,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="8" loc="(2310,1440)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(910,2830)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(720,1170)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -2008,6 +2023,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="offcolor" val="#40404037"/>
     </comp>
     <comp lib="7" loc="(240,2510)" name="Cell controller"/>
+    <comp lib="8" loc="(1030,200)" name="Output_big_numder"/>
     <comp lib="0" loc="(1230,820)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
@@ -2036,12 +2052,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
-    <comp lib="8" loc="(2050,1870)" name="otladka__^v"/>
+    <comp lib="8" loc="(1610,2830)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(530,820)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
-    <comp lib="8" loc="(560,1720)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(910,1160)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(1950,1580)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -2062,7 +2078,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="8" loc="(2310,2830)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(180,2760)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
@@ -2074,7 +2089,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(1610,1990)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(910,2550)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(2630,1650)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
@@ -2108,7 +2123,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="offcolor" val="#40404037"/>
     </comp>
     <comp lib="7" loc="(2340,1950)" name="Cell controller"/>
-    <comp lib="8" loc="(2310,2550)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(330,190)" name="LED">
       <a name="facing" val="north"/>
       <a name="color" val="#0cf000"/>
@@ -2117,14 +2131,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
-    <comp lib="8" loc="(1700,1870)" name="otladka__^v"/>
     <comp lib="5" loc="(240,850)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="8" loc="(1000,2420)" name="otladka__^v"/>
     <comp lib="0" loc="(530,1900)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
@@ -2156,7 +2168,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
-    <comp lib="8" loc="(1260,890)" name="otladka__&lt;&gt;"/>
+    <comp lib="5" loc="(1140,480)" name="DotMatrix">
+      <a name="matrixcols" val="15"/>
+      <a name="matrixrows" val="15"/>
+      <a name="color" val="#ffa400"/>
+    </comp>
+    <comp lib="8" loc="(300,2420)" name="otladka__^v"/>
     <comp lib="0" loc="(180,2200)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
@@ -2178,6 +2195,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
+    <comp lib="8" loc="(910,1440)" name="otladka__&lt;&gt;"/>
     <comp lib="7" loc="(590,1950)" name="Cell controller"/>
     <comp lib="5" loc="(900,2410)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
@@ -2199,6 +2217,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
+    <comp lib="8" loc="(1140,200)" name="Output_big_numder"/>
     <comp lib="0" loc="(450,520)" name="Tunnel">
       <a name="width" val="8"/>
       <a name="label" val="Columns"/>
@@ -2213,13 +2232,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="8" loc="(2660,1720)" name="otladka__&lt;&gt;"/>
-    <comp lib="8" loc="(2400,2140)" name="otladka__^v"/>
-    <comp lib="8" loc="(1260,2550)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(1580,1650)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
+    <comp lib="8" loc="(1260,1720)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(180,2740)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
@@ -2230,7 +2247,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
-    <comp lib="8" loc="(1350,2700)" name="otladka__^v"/>
+    <comp lib="8" loc="(2310,2270)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(1640,2030)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -2242,6 +2259,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
+    <comp lib="8" loc="(560,1990)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(590,950)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -2258,13 +2276,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
-    <comp lib="8" loc="(2660,1990)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(180,290)" name="Splitter">
       <a name="facing" val="south"/>
       <a name="bit0" val="1"/>
       <a name="bit1" val="0"/>
     </comp>
-    <comp lib="8" loc="(1250,200)" name="Output_big_numder"/>
+    <comp lib="8" loc="(1700,1310)" name="otladka__^v"/>
     <comp lib="5" loc="(480,360)" name="LED">
       <a name="color" val="#f0c8aa"/>
     </comp>
@@ -2296,10 +2313,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
+    <comp lib="8" loc="(560,890)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(370,2560)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
+    <comp lib="8" loc="(1610,1440)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(2660,2550)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(360,190)" name="LED">
       <a name="facing" val="north"/>
       <a name="color" val="#f0ea00"/>
@@ -2330,7 +2350,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="9"/>
       <a name="matrixrows" val="15"/>
     </comp>
-    <comp lib="8" loc="(1610,1160)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(850,2200)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
@@ -2341,7 +2360,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(2050,1590)" name="otladka__^v"/>
     <comp lib="0" loc="(1900,2180)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
@@ -2352,11 +2370,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="8" loc="(1610,1720)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(1250,1030)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
+    <comp lib="8" loc="(1700,2700)" name="otladka__^v"/>
+    <comp lib="8" loc="(1260,1440)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(1600,2410)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -2370,7 +2389,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
-    <comp lib="8" loc="(1610,890)" name="otladka__&lt;&gt;"/>
     <comp lib="7" loc="(2690,1120)" name="Cell controller"/>
     <comp lib="0" loc="(1230,1090)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -2390,7 +2408,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
-    <comp lib="8" loc="(2310,2270)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(1350,2700)" name="otladka__^v"/>
     <comp lib="5" loc="(2690,2030)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -2423,10 +2441,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
+    <comp lib="8" loc="(1960,1440)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(2630,2200)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
+    <comp lib="8" loc="(1350,1870)" name="otladka__^v"/>
+    <comp lib="8" loc="(650,2420)" name="otladka__^v"/>
     <comp lib="0" loc="(1230,2480)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
@@ -2435,6 +2456,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
+    <comp lib="8" loc="(910,2270)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(2690,2330)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -2464,6 +2486,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
+    <comp lib="8" loc="(2310,2550)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(1950,2410)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -2483,11 +2506,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
-    <comp lib="8" loc="(2050,2140)" name="otladka__^v"/>
+    <comp lib="8" loc="(1260,2270)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(1770,2560)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
+    <comp lib="8" loc="(1960,890)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(560,2830)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(1580,1900)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
@@ -2501,16 +2526,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
-    <comp lib="8" loc="(2400,1590)" name="otladka__^v"/>
-    <comp lib="8" loc="(560,2270)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(940,2890)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(2400,2700)" name="otladka__^v"/>
-    <comp lib="8" loc="(300,2140)" name="otladka__^v"/>
     <comp lib="0" loc="(880,2740)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
@@ -2522,6 +2543,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
+    <comp lib="8" loc="(1250,200)" name="Output_big_numder"/>
     <comp lib="5" loc="(1250,2690)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -2534,6 +2556,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
+    <comp lib="8" loc="(1960,2550)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(940,1220)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -2567,8 +2590,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
-    <comp lib="8" loc="(1260,1990)" name="otladka__&lt;&gt;"/>
-    <comp lib="8" loc="(910,890)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(2050,1310)" name="otladka__^v"/>
+    <comp lib="8" loc="(2400,1870)" name="otladka__^v"/>
     <comp lib="5" loc="(2120,900)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -2593,14 +2616,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
+    <comp lib="8" loc="(1260,1990)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(2340,2790)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="8" loc="(1960,1990)" name="otladka__&lt;&gt;"/>
-    <comp lib="8" loc="(560,2830)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(330,610)" name="DotMatrix">
       <a name="inputtype" val="row"/>
       <a name="matrixcols" val="10"/>
@@ -2609,7 +2631,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="offcolor" val="#40404000"/>
       <a name="dotshape" val="circle"/>
     </comp>
-    <comp lib="8" loc="(910,1990)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(940,2310)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -2644,7 +2665,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
-    <comp lib="8" loc="(560,1440)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(2120,2560)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -2668,6 +2688,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
+    <comp lib="8" loc="(1350,1590)" name="otladka__^v"/>
     <comp lib="5" loc="(2340,1120)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
@@ -2680,7 +2701,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(560,1990)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(260,500)" name="LED">
       <a name="facing" val="north"/>
       <a name="color" val="#ff58f2"/>
@@ -2698,7 +2718,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="11" loc="(420,580)" name="Field cahce"/>
     <comp lib="5" loc="(2340,2230)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
@@ -2726,7 +2745,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(2050,2420)" name="otladka__^v"/>
     <comp lib="0" loc="(1900,1370)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
@@ -2735,7 +2753,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="9"/>
       <a name="matrixrows" val="15"/>
     </comp>
-    <comp lib="8" loc="(1700,2700)" name="otladka__^v"/>
     <comp lib="5" loc="(340,610)" name="DotMatrix">
       <a name="inputtype" val="row"/>
       <a name="matrixcols" val="9"/>
@@ -2788,6 +2805,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
+    <comp lib="8" loc="(2310,1440)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(1700,1040)" name="otladka__^v"/>
     <comp lib="5" loc="(1640,2330)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -2800,7 +2819,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(2400,1310)" name="otladka__^v"/>
     <comp lib="5" loc="(2340,2330)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -2811,24 +2829,28 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
+    <comp lib="8" loc="(2660,890)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(1990,2890)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
+    <comp lib="8" loc="(1960,1160)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(2310,2830)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(650,1310)" name="otladka__^v"/>
+    <comp lib="8" loc="(300,1040)" name="otladka__^v"/>
+    <comp lib="8" loc="(1610,2550)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(240,2610)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(1350,1590)" name="otladka__^v"/>
     <comp lib="0" loc="(530,2480)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
-    <comp lib="8" loc="(2400,1040)" name="otladka__^v"/>
     <comp lib="5" loc="(2120,2840)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -2879,6 +2901,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
+    <comp lib="8" loc="(650,1870)" name="otladka__^v"/>
     <comp lib="5" loc="(550,2130)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -2889,6 +2912,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
+    <comp lib="8" loc="(650,2140)" name="otladka__^v"/>
     <comp lib="0" loc="(200,3160)" name="Splitter">
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
@@ -2897,6 +2921,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
+    <comp lib="8" loc="(300,1590)" name="otladka__^v"/>
     <comp lib="0" loc="(1580,2740)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
@@ -2950,7 +2975,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="8" loc="(300,2700)" name="otladka__^v"/>
     <comp lib="5" loc="(940,2870)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -2983,18 +3007,21 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
+    <comp lib="8" loc="(560,1720)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(1930,1090)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
-    <comp lib="8" loc="(2310,1160)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(390,190)" name="LED">
       <a name="facing" val="north"/>
     </comp>
+    <comp lib="8" loc="(2750,2420)" name="otladka__^v"/>
     <comp lib="0" loc="(180,1370)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
+    <comp lib="8" loc="(1960,2270)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(2400,1040)" name="otladka__^v"/>
     <comp lib="5" loc="(1990,2230)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
@@ -3030,16 +3057,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="7" loc="(240,1680)" name="Cell controller"/>
     <comp lib="5" loc="(90,460)" name="Button"/>
+    <comp lib="8" loc="(650,1590)" name="otladka__^v"/>
     <comp lib="5" loc="(2690,2890)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(650,2140)" name="otladka__^v"/>
-    <comp lib="8" loc="(2050,1310)" name="otladka__^v"/>
-    <comp lib="8" loc="(300,2420)" name="otladka__^v"/>
-    <comp lib="8" loc="(300,1590)" name="otladka__^v"/>
     <comp lib="5" loc="(1600,1300)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -3049,7 +3073,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
     </comp>
-    <comp lib="8" loc="(1350,2140)" name="otladka__^v"/>
+    <comp lib="8" loc="(2050,1590)" name="otladka__^v"/>
     <comp lib="5" loc="(1420,1450)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -3058,18 +3082,19 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
+    <comp lib="8" loc="(1260,890)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(1580,2180)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
+    <comp lib="11" loc="(420,310)" name="MCU v2"/>
     <comp lib="5" loc="(2340,2610)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(1030,200)" name="Output_big_numder"/>
     <comp lib="5" loc="(2300,1030)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -3080,6 +3105,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
+    <comp lib="8" loc="(1000,1590)" name="otladka__^v"/>
     <comp lib="0" loc="(3270,720)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="width" val="8"/>
@@ -3118,6 +3144,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
+    <comp lib="12" loc="(1310,480)" name="Fasa"/>
+    <comp lib="8" loc="(560,1440)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(2280,1650)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
@@ -3131,8 +3159,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="8" loc="(1610,2830)" name="otladka__&lt;&gt;"/>
     <comp lib="7" loc="(1640,1950)" name="Cell controller"/>
+    <comp lib="8" loc="(650,1040)" name="otladka__^v"/>
     <comp lib="5" loc="(940,1680)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
@@ -3162,7 +3190,8 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(2400,1870)" name="otladka__^v"/>
+    <comp lib="8" loc="(1610,2270)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(2400,2420)" name="otladka__^v"/>
     <comp lib="5" loc="(200,1030)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -3176,6 +3205,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixrows" val="5"/>
     </comp>
     <comp lib="4" loc="(440,180)" name="Counter"/>
+    <comp lib="8" loc="(2750,1870)" name="otladka__^v"/>
     <comp lib="0" loc="(880,1920)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
@@ -3196,6 +3226,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
+    <comp lib="8" loc="(300,1310)" name="otladka__^v"/>
     <comp lib="5" loc="(2120,2280)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -3212,16 +3243,19 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
+    <comp lib="5" loc="(940,480)" name="DotMatrix">
+      <a name="matrixcols" val="15"/>
+      <a name="matrixrows" val="15"/>
+      <a name="color" val="#007bff"/>
+    </comp>
     <comp lib="5" loc="(240,2890)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(1960,890)" name="otladka__&lt;&gt;"/>
-    <comp lib="8" loc="(1700,1040)" name="otladka__^v"/>
+    <comp lib="8" loc="(1610,1990)" name="otladka__&lt;&gt;"/>
     <comp lib="7" loc="(2690,2510)" name="Cell controller"/>
-    <comp lib="8" loc="(2750,2700)" name="otladka__^v"/>
     <comp lib="5" loc="(370,1170)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -3232,13 +3266,14 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
+    <comp lib="8" loc="(1700,2420)" name="otladka__^v"/>
     <comp lib="5" loc="(2690,930)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(2660,2830)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(1000,2700)" name="otladka__^v"/>
     <comp lib="7" loc="(240,2790)" name="Cell controller"/>
     <comp lib="0" loc="(880,1090)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -3251,7 +3286,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(1260,1160)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(1230,2200)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
@@ -3337,9 +3371,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(1960,2830)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(2750,1040)" name="otladka__^v"/>
     <comp lib="7" loc="(1990,2510)" name="Cell controller"/>
-    <comp lib="8" loc="(1000,1870)" name="otladka__^v"/>
+    <comp lib="8" loc="(300,2140)" name="otladka__^v"/>
     <comp lib="7" loc="(2340,2510)" name="Cell controller"/>
     <comp lib="5" loc="(1640,2790)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
@@ -3347,6 +3381,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
+    <comp lib="8" loc="(1260,1160)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(240,930)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -3389,19 +3424,20 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
-    <comp lib="8" loc="(300,1040)" name="otladka__^v"/>
-    <comp lib="8" loc="(1960,1440)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(650,2700)" name="otladka__^v"/>
     <comp lib="5" loc="(2340,2310)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(650,2420)" name="otladka__^v"/>
+    <comp lib="8" loc="(2750,2140)" name="otladka__^v"/>
+    <comp lib="8" loc="(2400,1310)" name="otladka__^v"/>
     <comp lib="5" loc="(550,1030)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
+    <comp lib="8" loc="(1960,2830)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(2690,1760)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -3413,24 +3449,18 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="8" loc="(300,1310)" name="otladka__^v"/>
     <comp lib="5" loc="(2690,1950)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="8" loc="(1260,1440)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(590,2590)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(2660,890)" name="otladka__&lt;&gt;"/>
-    <comp lib="8" loc="(2750,1590)" name="otladka__^v"/>
-    <comp lib="8" loc="(1350,2420)" name="otladka__^v"/>
-    <comp lib="8" loc="(1350,1870)" name="otladka__^v"/>
     <comp lib="0" loc="(1230,800)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
@@ -3450,7 +3480,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
     </comp>
-    <comp lib="8" loc="(650,2700)" name="otladka__^v"/>
     <comp lib="0" loc="(180,800)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
@@ -3461,11 +3490,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixrows" val="5"/>
     </comp>
     <comp lib="7" loc="(590,850)" name="Cell controller"/>
-    <comp lib="8" loc="(1000,2700)" name="otladka__^v"/>
     <comp lib="5" loc="(1030,190)" name="DotMatrix">
       <a name="matrixcols" val="9"/>
       <a name="matrixrows" val="15"/>
     </comp>
+    <comp lib="8" loc="(1960,1990)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(2620,820)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
@@ -3476,7 +3505,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="8" loc="(1700,2140)" name="otladka__^v"/>
     <comp lib="5" loc="(240,2510)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
@@ -3494,8 +3522,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
-    <comp lib="8" loc="(560,2550)" name="otladka__&lt;&gt;"/>
-    <comp lib="8" loc="(2310,1990)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(850,1350)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
@@ -3520,12 +3546,14 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
-    <comp lib="8" loc="(1000,1040)" name="otladka__^v"/>
+    <comp lib="8" loc="(1000,2140)" name="otladka__^v"/>
     <comp lib="0" loc="(80,310)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="8"/>
       <a name="label" val="Columns"/>
     </comp>
+    <comp lib="8" loc="(2660,1160)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(910,1990)" name="otladka__&lt;&gt;"/>
     <comp lib="7" loc="(1990,850)" name="Cell controller"/>
     <comp lib="5" loc="(1600,1030)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
@@ -3535,6 +3563,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
+    <comp lib="8" loc="(1000,2420)" name="otladka__^v"/>
     <comp lib="7" loc="(590,2230)" name="Cell controller"/>
     <comp lib="5" loc="(590,1400)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
@@ -3546,10 +3575,10 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
+    <comp lib="8" loc="(2400,1590)" name="otladka__^v"/>
     <comp lib="5" loc="(480,310)" name="LED">
       <a name="color" val="#c28bf0"/>
     </comp>
-    <comp lib="8" loc="(2660,1440)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(1770,1450)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -3564,6 +3593,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
+    <comp lib="8" loc="(2050,2420)" name="otladka__^v"/>
     <comp lib="7" loc="(2690,1400)" name="Cell controller"/>
     <comp lib="0" loc="(1580,2480)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -3593,14 +3623,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
-    <comp lib="8" loc="(910,2550)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(940,2790)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="8" loc="(650,1040)" name="otladka__^v"/>
     <comp lib="5" loc="(940,2030)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -3650,20 +3678,23 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="offcolor" val="#40404037"/>
     </comp>
     <comp lib="7" loc="(1290,1680)" name="Cell controller"/>
+    <comp lib="8" loc="(910,890)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(110,3160)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="8"/>
       <a name="label" val="Columns"/>
     </comp>
+    <comp lib="8" loc="(1700,1590)" name="otladka__^v"/>
     <comp lib="5" loc="(1290,1400)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
+    <comp lib="8" loc="(1610,1720)" name="otladka__&lt;&gt;"/>
     <comp lib="7" loc="(590,1120)" name="Cell controller"/>
     <comp lib="7" loc="(590,2510)" name="Cell controller"/>
-    <comp lib="8" loc="(1700,2420)" name="otladka__^v"/>
+    <comp lib="8" loc="(1350,2140)" name="otladka__^v"/>
     <comp lib="5" loc="(370,900)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -3672,13 +3703,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
-    <comp lib="8" loc="(1610,2550)" name="otladka__&lt;&gt;"/>
-    <comp lib="8" loc="(560,890)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(1580,1350)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
+    <comp lib="8" loc="(2050,2700)" name="otladka__^v"/>
     <comp lib="0" loc="(1930,800)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
@@ -3690,7 +3720,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="8" loc="(1350,1040)" name="otladka__^v"/>
     <comp lib="5" loc="(720,1450)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -3709,6 +3738,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="bit6" val="1"/>
       <a name="bit7" val="0"/>
     </comp>
+    <comp lib="8" loc="(1610,1160)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(2300,2130)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -3718,15 +3748,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="label" val="MISO"/>
     </comp>
     <comp lib="7" loc="(1290,1950)" name="Cell controller"/>
-    <comp lib="8" loc="(2750,1310)" name="otladka__^v"/>
-    <comp lib="8" loc="(910,1160)" name="otladka__&lt;&gt;"/>
-    <comp lib="8" loc="(560,1160)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(2340,930)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
+    <comp lib="8" loc="(300,2700)" name="otladka__^v"/>
     <comp lib="0" loc="(180,1070)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="2"/>
@@ -3743,7 +3771,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(1960,2550)" name="otladka__&lt;&gt;"/>
     <comp lib="0" loc="(530,1090)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
@@ -3754,7 +3781,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(1700,1310)" name="otladka__^v"/>
     <comp lib="5" loc="(1640,2870)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
@@ -3763,7 +3789,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="7" loc="(1640,1400)" name="Cell controller"/>
     <comp lib="7" loc="(1290,2230)" name="Cell controller"/>
-    <comp lib="8" loc="(2400,2420)" name="otladka__^v"/>
     <comp lib="5" loc="(900,1860)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -3774,7 +3799,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(1140,200)" name="Output_big_numder"/>
     <comp lib="0" loc="(2280,2480)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
@@ -3791,7 +3815,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="8" loc="(1960,2270)" name="otladka__&lt;&gt;"/>
     <comp lib="7" loc="(1990,2790)" name="Cell controller"/>
     <comp lib="0" loc="(1930,820)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -3803,6 +3826,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#0098ff"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
+    <comp lib="8" loc="(2750,2700)" name="otladka__^v"/>
     <comp lib="10" loc="(310,80)" name="input controller"/>
     <comp lib="5" loc="(1290,2030)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
@@ -3831,14 +3855,16 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="facing" val="south"/>
       <a name="label" val="Y"/>
     </comp>
-    <comp lib="8" loc="(1610,1440)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(560,2270)" name="otladka__&lt;&gt;"/>
+    <comp lib="8" loc="(560,1160)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(240,1400)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="8" loc="(1000,1310)" name="otladka__^v"/>
+    <comp lib="8" loc="(1000,1870)" name="otladka__^v"/>
+    <comp lib="8" loc="(1350,1040)" name="otladka__^v"/>
     <comp lib="5" loc="(590,2510)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
@@ -3854,6 +3880,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
+    <comp lib="8" loc="(300,1870)" name="otladka__^v"/>
     <comp lib="5" loc="(1600,2690)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
@@ -3863,20 +3890,20 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="2"/>
       <a name="label" val="MOSI"/>
     </comp>
+    <comp lib="8" loc="(910,1720)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(1290,850)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
-    <comp lib="8" loc="(910,2270)" name="otladka__&lt;&gt;"/>
-    <comp lib="8" loc="(910,2830)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(590,1680)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="5"/>
       <a name="color" val="#000000"/>
       <a name="offcolor" val="#ffffff"/>
     </comp>
+    <comp lib="8" loc="(1000,1040)" name="otladka__^v"/>
     <comp lib="5" loc="(350,610)" name="DotMatrix">
       <a name="inputtype" val="row"/>
       <a name="matrixcols" val="8"/>
@@ -3884,6 +3911,7 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#ffa60064"/>
       <a name="offcolor" val="#40404000"/>
     </comp>
+    <comp lib="8" loc="(2050,1040)" name="otladka__^v"/>
     <comp lib="0" loc="(2280,1370)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="MISO"/>
@@ -3894,11 +3922,11 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#ff8d00"/>
       <a name="offcolor" val="#40404037"/>
     </comp>
-    <comp lib="8" loc="(2050,1040)" name="otladka__^v"/>
     <comp lib="5" loc="(1420,1730)" name="DotMatrix">
       <a name="matrixcols" val="19"/>
       <a name="matrixrows" val="5"/>
     </comp>
+    <comp lib="8" loc="(2400,2140)" name="otladka__^v"/>
     <comp lib="7" loc="(240,850)" name="Cell controller"/>
     <comp lib="5" loc="(240,1680)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
@@ -3920,8 +3948,6 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="color" val="#f06538"/>
     </comp>
     <comp lib="7" loc="(2690,850)" name="Cell controller"/>
-    <comp lib="8" loc="(910,1440)" name="otladka__&lt;&gt;"/>
-    <comp lib="8" loc="(2660,2550)" name="otladka__&lt;&gt;"/>
     <comp lib="5" loc="(1290,1200)" name="DotMatrix">
       <a name="matrixcols" val="11"/>
       <a name="matrixrows" val="8"/>
