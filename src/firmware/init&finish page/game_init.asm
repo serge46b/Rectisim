@@ -25,6 +25,9 @@ game_init:
 	ldi r1, 0b00001100
 	st r0, r1
 	jsr IO_clrCCS
+	ldi r0, IO_UniCS
+	clr r1
+	st r0, r1
 	ldi r3, 2
 	player_select:
 		dec r3
@@ -43,11 +46,11 @@ game_init:
 		is nz
 			ldi r1, IO_CSC
 			ld r1, r1
-			clr r2
+			clr r2  # load adress (player 1 CSC)
 			st r2, r1
 			ldi r1, IO_CSR
 			ld r1, r1
-			inc r2
+			inc r2  # load adress (player 1 CSR)
 			st r2, r1
 			ldi r2, 0b01010000
 			ldi r1, 0b01000000
@@ -81,25 +84,30 @@ game_init:
 	ldi r0, IO_DBG
 	ldi r1, 0b00000010
 	st r0, r1
-	clr r0
+	clr r0  # load adress (player 1 CSC)
 	ld r0, r1
 	ldi r0, IO_CSC
 	ld r0, r2
 	st r0, r1
-	ldi r0, 0x02
+	ldi r0, 0x02  # load adress (player 2 CSC)
 	st r0, r2
-	ldi r0, 0x01
+	ldi r0, 0x01  # load adress (player 1 CSR)
 	ld r0, r1
 	ldi r0, IO_CSR
 	ld r0, r2
 	st r0, r1
-	ldi r0, 0x03
+	ldi r0, 0x03  # load adress (player 2 CSR)
 	st r0, r2	
 	ldi r0, IO_BC_ctrl
 	ldi r1, 0b10000000
 	st r0, r1
 	ldi r0, IO_BC_ctrl
 	clr r1
+	st r0, r1
+	ldi r0, 0x0a  # load adress (player 1 task SP)
+	ldi r1, 0x05
+	st r0, r1
+	ldi r0, 0x10  # load adress 0x00 (player 2 task SP)
 	st r0, r1
 	br page_rts
 
