@@ -104,10 +104,10 @@ game_init:
 	ldi r0, IO_BC_ctrl
 	clr r1
 	st r0, r1
-	ldi r0, 0x0a  # load adress (player 1 task SP)
-	ldi r1, 0x05
+	ldi r0, 0x14  # load adress (player 1 task SP)
+	ldi r1, 0x0f
 	st r0, r1
-	ldi r0, 0x10  # load adress 0x00 (player 2 task SP)
+	ldi r0, 0x24  # load adress 0x00 (player 2 task SP)
 	st r0, r1
 	br page_rts
 
