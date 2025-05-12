@@ -8,12 +8,12 @@ task_placement:
 	ldi r1, 0x03
 	st r0, r1
 	ldi r0, IO_BC_ctrl
-	ldi r1, 0b00000101
+	ldi r1, 0b00000110
 	or r3, r1
 	st r0, r1
 	ld r0, r0
 	if
-		ldi r1, 0b00000001
+		ldi r1, 0b00000101
 		and r0, r1
 	is nz
 		br page_rts
@@ -32,9 +32,15 @@ task_placement:
 			br task_placement
 		fi
 		if
-			move r2, r1
+			ldi r0, 0b11101100
+			and r2, r0
+		is nz
+			br place_loop
+		fi
+		if
 			ldi r0, 0b00000011
 			and r0, r2
+			move r2, r1
 			ldi r0, 0b00000010
 			and r2, r0
 			shr r0
@@ -52,7 +58,7 @@ task_placement:
 					if
 						dec r2
 					is z
-						shl r3
+						shla r3
 					else
 						shr r3
 					fi
@@ -67,12 +73,6 @@ task_placement:
 			clr r2
 			br place_adj
 		else
-			if
-				ldi r0, 0b11101100
-				and r1, r0
-			is nz
-				br place_loop
-			fi
 			move r1, r2
 			jsr prepare_horizontal_cnt
 			ldi r0, IO_CSR
@@ -86,7 +86,7 @@ task_placement:
 					if
 						dec r2
 					is cs
-						shl r3
+						shla r3
 					else
 						shr r3
 					fi
@@ -109,52 +109,52 @@ task_placement:
 		jsr IO_KBD_get
 		ldi r0, IO_Uni1
 		ld r0, r0
+		tst r0
 		shr r0
-		shr r0
-		shr r0
-		shr r0
-		shr r0
+		shra r0
+		shra r0
+		shra r0
+		shra r0
 		move r3, r1
 		if
 			cmp r0, r1
 		is hi
 			br place_adj
 		fi
+		ldi r3, IO_CSR
 		if
 			tst r2
-		is z
-			ldi r3, IO_CSR
-		else
-			ldi r3, IO_CSC
+		is nz
+			inc r3
 		fi
 		ld r3, r3
 		while
 			tst r0
 		stays nz
 			if
-				shl r3
+				shla r3
 			is cs
 				br place_loop
 			fi
+			dec r0
 		wend
 		move r3, r0
 		while
 			tst r1
 		stays nz
-			dec r1
 			if
 				shr r0
 			is cs
 				br place_loop
 			fi
 			or r0, r3
+			dec r1
 		wend
+		ldi r0, IO_CSR
 		if
 			tst r2
-		is z
-			ldi r0, IO_CSR
-		else
-			ldi r0, IO_CSC
+		is nz
+			inc r0
 		fi
 		st r0, r3
 	br page_rts

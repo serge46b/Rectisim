@@ -40,16 +40,37 @@ task_assigning:
 		ldi r0, IO_BC_ctrl
 		ldi r1, 0b10000000
 		st r0, r1
+		ldi r0, IO_DBG
+		ldi r1, 0b00001011
+		st r0, r1
 		ldi r0, 0x01
 		ldi r1, 0x05
 		jsr page_call
-		clr r0
+		ldi r0, IO_DBG
+		ldi r1, 0b00001100
+		st r0, r1
+		clr r0	
+		ldi r3, 0x04  # load adress (player select)
+		ld r3, r3
+		ldi r0, IO_BC_ctrl
+		ldi r1, 0b00001000
+		or r3, r1
+		st r0, r1
+		ld r0, r0
+		if
+			ldi r1, 0b00000100
+			and r0, r1
+		is nz
+			br place_loop
+		fi
+		ldi r0, IO_SPI_KBD_ctrl
+		ldi r1, 0b00000110
+		or r3, r1
+		st r0, r1
 		jsr IO_KBD_get
 		ldi r0, IO_Uni1
 		ld r0, r0
-		move r0, r2		
-		ldi r3, 0x04  # load adress (player select)
-		ld r3, r3
+		move r0, r2	
 		jsr get_player_SP_addr
 		ld r0, r0
 		jsr get_stack_adress
