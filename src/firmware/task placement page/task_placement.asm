@@ -42,10 +42,12 @@ task_placement:
 			and r0, r2
 			move r2, r1
 			ldi r0, 0b00000010
-			and r2, r0
-			shr r0
-			xor r2, r0
-		is nz
+			cmp r2, r0
+		is eq, or
+			dec r0
+			cmp r2, r0
+		is eq
+		then
 			jsr prepare_horizontal_cnt
 			ldi r0, IO_CSC
 			ld r0, r0
@@ -60,6 +62,7 @@ task_placement:
 					is z
 						shla r3
 					else
+						tst r0
 						shr r3
 					fi
 				is cs
@@ -85,9 +88,10 @@ task_placement:
 				if
 					if
 						dec r2
-					is cs
+					is cc
 						shla r3
 					else
+						tst r0
 						shr r3
 					fi
 				is cs
@@ -164,7 +168,7 @@ prepare_horizontal_cnt:
 	ldi r1, 0b00001100
 	and r0, r1
 	shr r1
-	shr r1
+	shra r1
 	rts
 
 prepare_vertical_cnt:

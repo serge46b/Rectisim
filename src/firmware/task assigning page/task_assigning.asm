@@ -40,15 +40,9 @@ task_assigning:
 		ldi r0, IO_BC_ctrl
 		ldi r1, 0b10000000
 		st r0, r1
-		ldi r0, IO_DBG
-		ldi r1, 0b00001011
-		st r0, r1
 		ldi r0, 0x01
 		ldi r1, 0x05
 		jsr page_call
-		ldi r0, IO_DBG
-		ldi r1, 0b00001100
-		st r0, r1
 		clr r0	
 		ldi r3, 0x04  # load adress (player select)
 		ld r3, r3
@@ -56,17 +50,24 @@ task_assigning:
 		ldi r1, 0b00001000
 		or r3, r1
 		st r0, r1
-		ld r0, r0
+#		ld r0, r0
+#		if
+#			ldi r1, 0b00000100
+#			and r0, r1
+#		is nz
+#			br place_loop
+#		fi
+		ldi r0, IO_SPI_KBD_ctrl
+		ldi r1, 0b01000110
+		or r3, r1
+		st r0, r1
 		if
-			ldi r1, 0b00000100
-			and r0, r1
+			ldi r0, IO_Uni1
+			ld r0, r0
+			tst r0
 		is nz
 			br place_loop
 		fi
-		ldi r0, IO_SPI_KBD_ctrl
-		ldi r1, 0b00000110
-		or r3, r1
-		st r0, r1
 		jsr IO_KBD_get
 		ldi r0, IO_Uni1
 		ld r0, r0
@@ -86,14 +87,14 @@ task_assigning:
 			fi
 			ldi r1, 0x03  # increment = 3
 			jsr inc_player_SP
-			ldi r2, IO_Uni1
-			ldi r1, 0b00010010
-			st r2, r1
-			ldi r0, IO_SPI_KBD_ctrl
-			ldi r1, 0b00001100
-			st r0, r1
+			jsr IO_clrCCS
+			clr r0
+			jsr send_accept_reject
 			br page_rts
 		fi
+	ldi r2, IO_SPI_KBD_ctrl
+	ldi r1, 0b00000011
+	st r2, r1
 	inc r0
 	ldi r1, IO_CSR
 	ld r1, r2
@@ -102,14 +103,28 @@ task_assigning:
 	inc r1
 	ld r1, r1
 	st r0, r2
-	ldi r2, IO_Uni1
-	ldi r1, 0b00010011
-	st r2, r1
+	jsr IO_clrCCS
+	ldi r0, 0x01
+	jsr send_accept_reject
+	br page_rts
+
+# r0 - is accepted (0b00000001 - accepted, rejected otherwise)
+# Uses r0, r1
+send_accept_reject:
+	ldi r1, 0b00010010
+	or r0, r1
+	ldi r0, IO_Uni1
+	st r0, r1
+	ldi r0, IO_UniCS
+	ldi r1, 0b10000001
+	st r0, r1
 	ldi r0, IO_SPI_KBD_ctrl
 	ldi r1, 0b00001100
 	st r0, r1
-	br page_rts
+	rts
 	
+
+
 GLIO_restore_player_pos:
 	if
 		ldi r1, 0b00010000
@@ -136,6 +151,7 @@ IO_SPI_KBD_ctrl: ext
 IO_BC_ctrl: ext
 
 IO_KBD_get: ext
+IO_clrCCS: ext
 
 inc_player_SP: ext
 get_player_SP_addr: ext
