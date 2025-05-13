@@ -60,4 +60,15 @@ IO_SPI_send_predef>
 	ldi r0, IO_SPI_KBD_ctrl
 	st r0, r1
 	rts
+# ----------------
+# r0 - contains mask (0b00000001 - read number)
+# Returns nothing, all results are in Uni1 and Uni2
+# Uses r0, r1
+	rsect IO_KBD_get_cmd
+IO_KBD_get>
+	ldi r1, 0b10000000
+	or r0, r1
+	ldi r0, IO_SPI_KBD_ctrl
+	st r0, r1
+	rts
 end
