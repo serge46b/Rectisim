@@ -41,7 +41,7 @@ task_placement:
 			ldi r0, 0b00000011
 			and r0, r2
 			move r2, r1
-			ldi r0, 0b00000010
+			dec r0
 			cmp r2, r0
 		is eq, or
 			dec r0
@@ -161,7 +161,8 @@ task_placement:
 			inc r0
 		fi
 		st r0, r3
-	br page_rts
+		clr r0
+		br page_rts
 
 prepare_horizontal_cnt:
 	jsr prepare_stack

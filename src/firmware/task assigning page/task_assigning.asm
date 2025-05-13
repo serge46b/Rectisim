@@ -40,23 +40,22 @@ task_assigning:
 		ldi r0, IO_BC_ctrl
 		ldi r1, 0b10000000
 		st r0, r1
+		jsr get_player_SP_addr
+		ld r0, r0
+		jsr get_stack_adress
+		push r0
+		ldi r1, 0b00001000
+		or r3, r1
+		push r1
+		push r3
 		ldi r0, 0x01
 		ldi r1, 0x05
 		jsr page_call
-		clr r0	
-		ldi r3, 0x04  # load adress (player select)
-		ld r3, r3
+		pop r3
 		ldi r0, IO_BC_ctrl
-		ldi r1, 0b00001000
-		or r3, r1
+		pop r1
 		st r0, r1
-#		ld r0, r0
-#		if
-#			ldi r1, 0b00000100
-#			and r0, r1
-#		is nz
-#			br place_loop
-#		fi
+		bnz cancel_task
 		ldi r0, IO_SPI_KBD_ctrl
 		ldi r1, 0b01000110
 		or r3, r1
@@ -70,11 +69,7 @@ task_assigning:
 		fi
 		jsr IO_KBD_get
 		ldi r0, IO_Uni1
-		ld r0, r0
-		move r0, r2	
-		jsr get_player_SP_addr
-		ld r0, r0
-		jsr get_stack_adress
+		ld r0, r2
 		if
 			ldi r1, 0b00011111
 			cmp r2, r1
@@ -85,13 +80,15 @@ task_assigning:
 			is ne
 				br place_loop
 			fi
-			ldi r1, 0x03  # increment = 3
-			jsr inc_player_SP
-			jsr IO_clrCCS
-			clr r0
-			jsr send_accept_reject
-			br page_rts
+			cancel_task:
+				pop r0
+				ldi r1, 0x03  # increment = 3
+				jsr inc_player_SP
+				jsr IO_clrCCS
+				jsr send_accept_reject
+				br page_rts
 		fi
+		pop r0
 	ldi r2, IO_SPI_KBD_ctrl
 	ldi r1, 0b00000011
 	st r2, r1
@@ -101,7 +98,7 @@ task_assigning:
 	st r0, r2
 	inc r0
 	inc r1
-	ld r1, r1
+	ld r1, r2
 	st r0, r2
 	jsr IO_clrCCS
 	ldi r0, 0x01

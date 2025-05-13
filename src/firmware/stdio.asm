@@ -11,11 +11,11 @@ IO_CSC> ds 1
 # Uses r0, r1
 	rsect IO_clrCCS
 IO_clrCCS>
-	ldi r0, IO_CSR
-	ldi r1, 0x00
-	st r0, r1
-	inc r0
-	st r0, r1
+	ldi r1, IO_CSR
+	ldi r0, 0x00
+	st r1, r0
+	inc r1
+	st r1, r0
 	rts
 # ----------------
 # Uses r0, r1
