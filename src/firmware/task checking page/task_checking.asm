@@ -6,12 +6,21 @@ task_checking:
 	ld r3, r3
 	jsr get_player_SP_addr
 	ld r0, r0
-	while
-		ldi r3, 0x0f
-		cmp r3, r0
-	stays ne
-		move r0, r3
-		jsr get_stack_adress
+	add r3, r0
+	push r0
+	move r0, r3
+	check_loop:
+		if
+			ldi r0, 0x1f
+			cmp r0, r3
+		is eq, or
+			ldi r0, 0x2f
+			cmp r0, r3
+		is eq
+		then
+			br loop_end
+		fi
+		move r3, r0
 		inc r0
 		ld r0, r1
 		ldi r2, IO_CSR
@@ -34,10 +43,7 @@ task_checking:
 			ldi r0, IO_SPI_KBD_ctrl
 			ldi r1, 0b00001110
 			st r0, r1
-			move r3, r0
-			jsr get_stack_adress
-			push r0
-			ld r0, r0
+			ld r3, r0
 			ldi r1, IO_Uni1
 			st r1, r0
 			ldi r1, IO_UniCS
@@ -47,8 +53,8 @@ task_checking:
 			ldi r1, 0b00001100
 			st r0, r1
 			move r3, r0
-			jsr get_stack_adress
 			pop r1
+			push r1
 			ldi r2, 0x04
 			if
 				cmp r1, r0
@@ -84,8 +90,9 @@ task_checking:
 		inc r3
 		inc r3
 		inc r3
-	wend
-	
+	br check_loop
+loop_end:
+	pop r0
 	br page_rts
 
 GLIO_restore_player_pos:
@@ -113,7 +120,6 @@ IO_BC_ctrl: ext
 IO_SPI_KBD_ctrl: ext
 
 get_player_SP_addr: ext
-get_stack_adress: ext
 inc_player_SP: ext
 
 page_rts: ext

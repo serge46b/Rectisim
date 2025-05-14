@@ -8,9 +8,9 @@ get_player_SP_addr>
 		ldi r0, 0b00010000
 		and r3, r0
 	is nz
-		ldi r0, 0x14  # load adress (player 1 task SP)
+		ldi r0, 0x1f  # load adress (player 1 task SP)
 	else
-		ldi r0, 0x24  # load adress (player 2 task SP)
+		ldi r0, 0x2f  # load adress (player 2 task SP)
 	fi
 	rts
 
@@ -29,13 +29,13 @@ inc_player_SP>
 	rts
 
 # ----------------
-# Get stack emmory adress
+# Get stack memory adress
 # r0 - SP
-# Uses r0, r1
+# r3 - player
+# Uses r0
 # stores result in r0
-	rsect get_stack_adress
-get_stack_adress>
-	ldi r1, 0x05
-	add r1, r0
-	rts
+#	rsect get_stack_adress
+#get_stack_adress>
+#	add r3, r0
+#	rts
 end

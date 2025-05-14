@@ -28,7 +28,7 @@ task_assigning:
 	ld r3, r3
 	ldi r1, 0xfd  # increment = -3
 	jsr inc_player_SP
-	jsr get_stack_adress
+	add r3, r0
 	st r0, r2
 	clr r1
 	inc r0
@@ -40,10 +40,6 @@ task_assigning:
 		ldi r0, IO_BC_ctrl
 		ldi r1, 0b10000000
 		st r0, r1
-		jsr get_player_SP_addr
-		ld r0, r0
-		jsr get_stack_adress
-		push r0
 		ldi r1, 0b00001000
 		or r3, r1
 		push r1
@@ -81,14 +77,15 @@ task_assigning:
 				br place_loop
 			fi
 			cancel_task:
-				pop r0
 				ldi r1, 0x03  # increment = 3
 				jsr inc_player_SP
 				jsr IO_clrCCS
 				jsr send_accept_reject
 				br page_rts
 		fi
-		pop r0
+	jsr get_player_SP_addr
+	ld r0, r0
+	add r3, r0
 	ldi r2, IO_SPI_KBD_ctrl
 	ldi r1, 0b00000011
 	st r2, r1
@@ -152,7 +149,6 @@ IO_clrCCS: ext
 
 inc_player_SP: ext
 get_player_SP_addr: ext
-get_stack_adress: ext
 
 page_call: ext
 page_rts: ext

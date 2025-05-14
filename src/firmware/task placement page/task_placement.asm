@@ -181,7 +181,7 @@ prepare_vertical_cnt:
 prepare_stack:
 	jsr get_player_SP_addr
 	ld r0, r0
-	jsr get_stack_adress
+	add r3, r0
 	ld r0, r0
 	rts
 
@@ -194,7 +194,6 @@ IO_Uni1: ext
 IO_KBD_get: ext
 
 get_player_SP_addr: ext
-get_stack_adress: ext
 
 page_rts: ext
 end
