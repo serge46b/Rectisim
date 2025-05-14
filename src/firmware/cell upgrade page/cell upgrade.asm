@@ -11,6 +11,9 @@ cell_upgrade:
 	ldi r0, IO_BC_ctrl
 	ldi r1, 0b10000000
 	st r0, r1
+	ldi r1, IO_UniCS
+	clr r0
+	st r1, r0
 	ldi r0, IO_BC_ctrl
 	ldi r1, 0b00000101
 	or r3, r1
@@ -42,9 +45,6 @@ cell_upgrade:
 	st r2, r1
 	
 	ldi r1, IO_UniCS
-	clr r0
-	st r1, r0
-	ldi r1, IO_UniCS
 	ldi r0, 0b10000001
 	st r1, r0
 	
@@ -61,14 +61,20 @@ cell_upgrade:
 	ldi r0, IO_BC_ctrl
 	clr r1
 	st r0, r1
+	ldi r0, IO_SPI_KBD_ctrl
+	ldi r1, 0b00111110
+	st r0, r1
 	pop r0
 	ldi r1, 0b00001000
 	or r1, r0
+	st r2, r0
 	pop r1
 	dec r2
 	st r2, r1
-	clr r1
-	jsr IO_SPI_send_cmd
+	ldi r0, IO_SPI_KBD_ctrl
+	ldi r1, 0b00000100
+	st r0, r1
+	clr r0
 	br page_rts
 
 
@@ -97,7 +103,6 @@ IO_BC_ctrl: ext
 IO_SPI_KBD_ctrl: ext
 
 IO_KBD_get: ext
-IO_SPI_send_cmd: ext
 IO_clrCCS: ext
 
 page_rts: ext	

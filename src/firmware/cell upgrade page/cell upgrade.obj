@@ -1,11 +1,10 @@
-ABS  00: d7 d0 00 d1 03 a1 d3 04 bf d6 5a d0 00 d1 80 a1 d0 00 d1 05 5d a1 b0 d1 01 41 e1 00 d2 00 d0 01 d6 00 d6 00 d3 00 d1 08 ad bb 8a b8 c0 8e b8 c0 d1 18 51 a9 d1 00 30 a4 d1 00 d0 81 a4 d1 00 d0 44 a4 b8 00 e1 01 d1 00 30 a4 d0 00 35 a1 c4 d1 08 54 c5 8a a9 35 d6 00 ee 00 d1 10 4d e0 62 30 ee 64 d0 02 b1 8c b2 d0 00 a2 8c a1 d7
+ABS  00: d7 d0 00 d1 03 a1 d3 04 bf d6 63 d0 00 d1 80 a1 d1 00 30 a4 d0 00 d1 05 5d a1 b0 d1 01 41 e1 00 d2 00 d0 01 d6 00 d6 00 d3 00 d1 08 ad bb 8a b8 c0 8e b8 c0 d1 18 51 a9 d1 00 d0 81 a4 d1 00 d0 44 a4 b8 00 e1 01 d1 00 30 a4 d0 00 35 a1 d0 00 d1 3e a1 c4 d1 08 54 a8 c5 8a a9 d0 00 d1 04 a1 30 ee 00 d1 10 4d e0 6b 30 ee 6d d0 02 b1 8c b2 d0 00 a2 8c a1 d7
 NTRY page_in_ctrl 00
-XTRN IO_CSR: $abs 68
-XTRN IO_Uni1: $abs 02 $abs 1d
-XTRN IO_UniCS: $abs 35 $abs 39 $abs 47
-XTRN IO_BC_ctrl: $abs 0c $abs 11 $abs 25 $abs 4b
-XTRN IO_SPI_KBD_ctrl: $abs 3e
-XTRN IO_KBD_get: $abs 21
-XTRN IO_SPI_send_cmd: $abs 57
-XTRN IO_clrCCS: $abs 23
-XTRN page_rts: $abs 1b $abs 59
+XTRN IO_CSR: $abs 71
+XTRN IO_Uni1: $abs 02 $abs 21
+XTRN IO_UniCS: $abs 11 $abs 39 $abs 47
+XTRN IO_BC_ctrl: $abs 0c $abs 15 $abs 29 $abs 4b
+XTRN IO_SPI_KBD_ctrl: $abs 3e $abs 4f $abs 5c
+XTRN IO_KBD_get: $abs 25
+XTRN IO_clrCCS: $abs 27
+XTRN page_rts: $abs 1f $abs 62

@@ -1,4 +1,4 @@
-ABS  00: d7 d3 04 bf d6 00 b0 1c c0 03 d0 1f 73 e0 14 d0 2f 73 e1 16 ee 6e 0c 8c b1 d2 00 a9 8c 8e b0 a8 d0 00 d1 04 b5 d2 08 59 a1 b0 d1 02 41 e0 69 d0 08 d6 00 bc d1 00 a4 d1 00 d0 81 a4 d0 00 d1 0c a1 0c c5 c1 d2 04 74 e0 58 8a e0 56 c2 b2 a6 3a a2 8c 8d c6 ee 49 ee 60 8a e0 60 30 a4 8d ee 58 c3 d3 04 bf d1 03 d6 00 c7 8f 8f 8f ee 0a c4 d6 00 d1 00 30 a4 d0 00 d1 08 a1 d1 00 d0 81 a4 d0 40 d6 00 d2 00 b8 00 e0 00 d0 01 d1 07 d6 00 ee 75
+ABS  00: d7 d3 04 bf d6 00 b0 1c c0 03 d0 1f 73 e0 14 d0 2f 73 e1 16 ee 6e 0c 8c b1 d2 00 a9 8c 8e b0 a8 d0 00 d1 04 b5 d2 08 59 a1 b0 d1 02 41 e0 69 d0 08 d6 00 bc d1 00 a4 d1 00 d0 81 a4 d0 00 d1 0c a1 0c c5 c1 d2 04 74 e0 58 8a e0 56 c2 b2 a6 3a a2 8c 8d c6 ee 49 ee 60 8a e0 60 30 a4 8d ee 58 c3 d3 04 bf d1 03 d6 00 c7 8f 8f 8f ee 0a c4 d6 00 d1 00 30 a4 d0 00 d1 08 a1 d1 00 d0 81 a4 d0 40 d6 00 d2 00 b8 00 e0 00 d0 01 d1 07 d6 00 e1 00 ee 75
 NTRY page_in_ctrl 00
 XTRN IO_UniCS: $abs 38 $abs 72 $abs 7b
 XTRN IO_Uni1: $abs 35 $abs 84
@@ -9,5 +9,5 @@ XTRN IO_SPI_send_predef: $abs 32 $abs 82
 XTRN IO_clrCCS: $abs 70
 XTRN get_player_SP_addr: $abs 05
 XTRN inc_player_SP: $abs 67
-XTRN page_rts: $abs 88
+XTRN page_rts: $abs 88 $abs 90
 XTRN page_call: $abs 8e

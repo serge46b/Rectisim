@@ -1329,25 +1329,23 @@ a1 d7 c5 d0 f7 a1 ee
     <comp lib="4" loc="(980,860)" name="ROM">
       <a name="contents">addr/data: 8 8
 d7 d0 fb d1 3 a1 d3 4
-bf d6 5a d0 f8 d1 80 a1
-d0 f8 d1 5 5d a1 b0 d1
-1 41 e1 98 d2 fb d0 1
-d6 91 d6 89 d3 f8 d1 8
-ad bb 8a b8 c0 8e b8 c0
-d1 18 51 a9 d1 fd 30 a4
+bf d6 63 d0 f8 d1 80 a1
+d1 fd 30 a4 d0 f8 d1 5
+5d a1 b0 d1 1 41 e1 85
+d2 fb d0 1 d6 7e d6 76
+d3 f8 d1 8 ad bb 8a b8
+c0 8e b8 c0 d1 18 51 a9
 d1 fd d0 81 a4 d1 fc d0
 44 a4 b8 0 e1 1 d1 fd
-30 a4 d0 f8 35 a1 c4 d1
-8 54 c5 8a a9 35 d6 6d
-ee 98 d1 10 4d e0 62 30
-ee 64 d0 2 b1 8c b2 d0
-fe a2 8c a1 d7 c1 c0 d0
-38 d6 82 c4 d1 fb a4 c4
-d1 c 51 d0 fc a1 d0 fb
-b0 d7 d1 6 51 d0 fc a1
-d7 d1 fe d0 0 a4 8d a4
-d7 d1 80 51 d0 fc a1 d7
-c5 d0 f7 a1 ee
+30 a4 d0 f8 35 a1 d0 fc
+d1 3e a1 c4 d1 8 54 a8
+c5 8a a9 d0 fc d1 4 a1
+30 ee 85 d1 10 4d e0 6b
+30 ee 6d d0 2 b1 8c b2
+d0 fe a2 8c a1 d7 d1 fe
+d0 0 a4 8d a4 d7 d1 80
+51 d0 fc a1 d7 c5 d0 f7
+a1 ee
 </a>
     </comp>
     <comp lib="1" loc="(2520,710)" name="AND Gate">
@@ -1662,35 +1660,35 @@ d2 4 19 d7
     </comp>
     <comp lib="4" loc="(980,760)" name="ROM">
       <a name="contents">addr/data: 8 8
-d7 d3 4 bf d6 c4 b0 1c
+d7 d3 4 bf d6 c6 b0 1c
 c0 3 d0 1f 73 e0 14 d0
 2f 73 e1 16 ee 6e c 8c
 b1 d2 fe a9 8c 8e b0 a8
 d0 f8 d1 4 b5 d2 8 59
 a1 b0 d1 2 41 e0 69 d0
-8 d6 a6 bc d1 fb a4 d1
+8 d6 a8 bc d1 fb a4 d1
 fd d0 81 a4 d0 fc d1 c
 a1 c c5 c1 d2 4 74 e0
 58 8a e0 56 c2 b2 a6 3a
 a2 8c 8d c6 ee 49 ee 60
 8a e0 60 30 a4 8d ee 58
-c3 d3 4 bf d1 3 d6 d0
+c3 d3 4 bf d1 3 d6 d2
 c7 8f 8f 8f ee a c4 d6
-d8 d1 fd 30 a4 d0 f8 d1
+da d1 fd 30 a4 d0 f8 d1
 8 a1 d1 fd d0 81 a4 d0
-40 d6 a6 d2 fb b8 0 e0
-e0 d0 1 d1 7 d6 ad ee
-75 c1 c0 d0 38 d6 a6 c4
-d1 fb a4 c4 d1 c 51 d0
-fc a1 d0 fb b0 d7 d1 6
-51 d0 fc a1 d7 3a c2 d3
-f7 be ad cb 0 c2 d6 bd
-ad c0 ee 0 d7 c9 0 b5
-d2 4 19 d7 d0 10 4c e0
-cd d0 1f ee cf d0 2f d7
-d6 c4 c0 b0 14 c5 a4 d7
-d1 fe d0 0 a4 8d a4 d7
-c5 d0 f7 a1 ee
+40 d6 a8 d2 fb b8 0 e0
+e2 d0 1 d1 7 d6 af e1
+e2 ee 75 c1 c0 d0 38 d6
+a8 c4 d1 fb a4 c4 d1 c
+51 d0 fc a1 d0 fb b0 d7
+d1 6 51 d0 fc a1 d7 3a
+c2 d3 f7 be ad cb 0 c2
+d6 bf ad c0 ee 0 d7 c9
+0 b5 d2 4 19 d7 d0 10
+4c e0 cf d0 1f ee d1 d0
+2f d7 d6 c6 c0 b0 14 c5
+a4 d7 d1 fe d0 0 a4 8d
+a4 d7 c5 d0 f7 a1 ee
 </a>
     </comp>
     <comp lib="0" loc="(2260,640)" name="Tunnel">

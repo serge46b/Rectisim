@@ -114,6 +114,7 @@ upgrade_loop:
 	ldi r0, 0x01
 	ldi r1, 0x07
 	jsr page_call
+	bnz page_rts
 	br upgrade_loop
 
 
