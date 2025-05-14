@@ -1,0 +1,9 @@
+ABS  00: d7 d0 04 b3 d6 69 d0 00 d1 80 a1 d0 30 d6 00 d0 01 5c d6 7c d1 01 41 e0 67 d0 00 b1 c1 88 b1 c1 d0 01 d1 40 d6 00 d0 00 b0 d1 03 71 e1 37 d0 ff c5 a1 8c c5 a1 ee 5c 05 c5 c6 91 92 d0 e0 42 c2 c1 d0 08 52 d0 ff a1 8c a2 d0 3e d6 00 d0 00 d1 04 a1 d0 ff c5 a1 8c c5 d2 08 59 a1 d0 3e d6 00 d0 00 d1 04 a1 ee 0b ee 00 d1 10 4d e0 71 30 ee 73 d0 02 b1 8c b2 d0 00 a2 8c a1 d7 d1 04 51 d0 00 a1 b0 d7
+NTRY page_in_ctrl 00
+XTRN IO_Uni1: $abs 1a $abs 27 $abs 2f $abs 45 $abs 53
+XTRN IO_CSR: $abs 77
+XTRN IO_BC_ctrl: $abs 07 $abs 80
+XTRN IO_SPI_KBD_ctrl: $abs 4e $abs 61
+XTRN IO_SPI_send_predef: $abs 0e $abs 4c $abs 5f
+XTRN IO_SPI_send_cmd: $abs 25
+XTRN page_rts: $abs 68

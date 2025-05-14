@@ -1,0 +1,5 @@
+NAME get_player_SP
+DATA d0 10 4c e0 09 d0 1f ee 0b d0 2f d7 d6 00 c0 b0 14 c5 a4 d7
+REL  04 08 0d
+NTRY get_player_SP_addr 00
+NTRY inc_player_SP 0c

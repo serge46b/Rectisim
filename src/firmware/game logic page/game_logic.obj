@@ -1,0 +1,12 @@
+ABS  00: d7 d0 04 d3 10 a3 d6 00 d0 00 d1 08 a1 d6 00 b0 00 e0 20 d1 01 d6 75 d0 01 d1 04 d6 00 d3 04 bf d1 02 d6 75 d0 01 d1 03 d6 00 d6 00 d0 00 d1 08 a1 d1 0c d6 75 d0 00 d1 ff a1 8c a1 d2 04 b8 d1 08 54 d6 00 d0 03 d6 89 d0 00 d1 08 a1 b0 d1 02 71 e1 55 ee 00 d6 00 b0 d1 0f 71 e0 6c d6 00 d3 04 bf d1 03 d6 75 d0 01 d1 06 d6 00 d2 04 bb d0 30 63 ab ee 06 0c 90 90 54 d1 00 a4 d2 00 d1 82 a9 d0 00 d1 0c a1 35 a9 d7 d1 04 51 d0 00 a1 b0 d7
+NTRY page_in_ctrl 00
+XTRN IO_BC_ctrl: $abs 09 $abs 2d $abs 49 $abs 8d
+XTRN IO_Uni1: $abs 7a
+XTRN IO_UniCS: $abs 7d
+XTRN IO_CSR: $abs 36
+XTRN IO_SPI_KBD_ctrl: $abs 82
+XTRN IO_SPI_send_predef: $abs 43
+XTRN IO_clrCCS: $abs 07 $abs 2b $abs 5e
+XTRN page_rts: $abs 54
+XTRN page_call: $abs 1c $abs 29 $abs 6b
+XTRN get_player_SP_addr: $abs 0e $abs 56
