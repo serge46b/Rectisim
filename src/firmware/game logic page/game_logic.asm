@@ -63,6 +63,7 @@ game_cycle:
 		ldi r1, 0x0f
 		cmp r0, r1
 	is ne
+		jsr IO_clrCCS
 		ldi r3, 0x04
 		ld r3, r3
 		ldi r1, 0b00000011

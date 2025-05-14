@@ -41,7 +41,7 @@ task_placement:
 			ldi r0, 0b00000011
 			and r0, r2
 			move r2, r1
-			ldi r0, 0b00000010
+			dec r0
 			cmp r2, r0
 		is eq, or
 			dec r0
@@ -161,7 +161,8 @@ task_placement:
 			inc r0
 		fi
 		st r0, r3
-	br page_rts
+		clr r0
+		br page_rts
 
 prepare_horizontal_cnt:
 	jsr prepare_stack
@@ -180,7 +181,7 @@ prepare_vertical_cnt:
 prepare_stack:
 	jsr get_player_SP_addr
 	ld r0, r0
-	jsr get_stack_adress
+	add r3, r0
 	ld r0, r0
 	rts
 
@@ -193,7 +194,6 @@ IO_Uni1: ext
 IO_KBD_get: ext
 
 get_player_SP_addr: ext
-get_stack_adress: ext
 
 page_rts: ext
 end
