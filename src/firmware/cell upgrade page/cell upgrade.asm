@@ -9,6 +9,9 @@ cell_upgrade:
 	ld r3, r3
 	jsr GLIO_restore_player_pos
 	ldi r0, IO_BC_ctrl
+	ldi r1, 0b10000000
+	st r0, r1
+	ldi r0, IO_BC_ctrl
 	ldi r1, 0b00000101
 	or r3, r1
 	st r0, r1
@@ -19,78 +22,52 @@ cell_upgrade:
 	bnz page_rts
 	
 	ldi r2, IO_Uni1
-	clr r0
+	ldi r0, 0b00000001
 	jsr IO_KBD_get
-	ld r2, r0
 	
-	ldi r1, 0b00011000
-	and r1, r3
-	cmp r3, r1
-	bne page_rts
-	
+	jsr IO_clrCCS
 	ldi r3, IO_BC_ctrl
 	ldi r1, 0b00001000
 	st r3, r1
 	ld r2, r3
-	if
-		ldi r1, 0b00011111
-		cmp r0, r1
-	is eq
-		ldi r0, 0b00000001
-		jsr IO_KBD_get
-		dec r2
-		ld r2, r0
-		push r0
-		inc r2
-		ld r2, r0
-		push r0
-		ldi r1, 0b00011000
-		or r0, r1
-		st r0, r1
-		ldi r1, IO_SPI_KBD_ctrl
-		ldi r0, 0b01000100
-		st r1, r0
-		ld r2, r0
-		tst r0
-		br page_rts
-		ldi r1, IO_UniCS
-		clr r0
-		st r1, r0
-		ldi r0, IO_BC_ctrl
-		clr r1
-		st r0, r1
-		pop r0
-		ldi r1, 0b00001000
-		or r1, r0
-		pop r1
-		dec r2
-		st r2, r1
-		clr r1
-	else
-		push r0
-		ldi r1, 0b00011001
-		st r2, r1
-		ldi r1, IO_SPI_KBD_ctrl
-		ldi r0, 0b01001100
-		st r1, r0
-		ld r2, r0
-		tst r0
-		bnz page_rts
-		pop r0
-		shr r0
-		shr r0
-		shr r0
-		ldi r1, IO_Uni2
-		st r1, r0
-		ldi r0, IO_BC_ctrl
-		clr r1
-		st r0, r1
-		ldi r1, IO_UniCS
-		clr r0
-		st r1, r0
-		ldi r1, 0x01
-		ldi r0, 0b00001001
-	fi
+
+	dec r2
+	ld r2, r0
+	push r0
+	inc r2
+	ld r2, r0
+	push r0
+	ldi r1, 0b00011000
+	or r0, r1
+	st r2, r1
+	
+	ldi r1, IO_UniCS
+	clr r0
+	st r1, r0
+	ldi r1, IO_UniCS
+	ldi r0, 0b10000001
+	st r1, r0
+	
+	ldi r1, IO_SPI_KBD_ctrl
+	ldi r0, 0b01000100
+	st r1, r0
+	ld r2, r0
+	tst r0
+	bnz cell_upgrade
+	
+	ldi r1, IO_UniCS
+	clr r0
+	st r1, r0
+	ldi r0, IO_BC_ctrl
+	clr r1
+	st r0, r1
+	pop r0
+	ldi r1, 0b00001000
+	or r1, r0
+	pop r1
+	dec r2
+	st r2, r1
+	clr r1
 	jsr IO_SPI_send_cmd
 	br page_rts
 
@@ -115,13 +92,13 @@ GLIO_restore_player_pos:
 
 IO_CSR: ext
 IO_Uni1: ext
-IO_Uni2: ext
 IO_UniCS: ext
 IO_BC_ctrl: ext
 IO_SPI_KBD_ctrl: ext
 
 IO_KBD_get: ext
 IO_SPI_send_cmd: ext
+IO_clrCCS: ext
 
 page_rts: ext	
 end

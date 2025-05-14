@@ -93,6 +93,9 @@ task_checking:
 loop_end:
 	pop r0
 	jsr IO_clrCCS
+	ldi r1, IO_UniCS
+	clr r0
+	st r1, r0
 upgrade_loop:
 	ldi r0, IO_BC_ctrl
 	ldi r1, 0b00001000
