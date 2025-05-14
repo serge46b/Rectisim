@@ -1,0 +1,3 @@
+ABS  00: c8 00 00 e0 06 d7 cc f7 d0 01 d1 01 d6 00 d0 01 d1 02 d6 00 d4
+NTRY page_in_ctrl 00
+XTRN page_call: $abs 0d $abs 13

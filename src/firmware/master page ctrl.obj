@@ -1,0 +1,5 @@
+NAME page_call
+DATA 3a c2 d3 f7 be ad cb 00 c2 d6 10 ad c0 ee 00 d7 c9 00 b5 d2 04 19 d7
+REL  0a
+NTRY page_call 00
+XTRN page_in_ctrl: page_call 0e

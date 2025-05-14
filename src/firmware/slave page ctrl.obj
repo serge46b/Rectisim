@@ -1,0 +1,5 @@
+NAME page_rts
+DATA c5 d0 f7 a1 ee 00
+REL  
+NTRY page_rts 00
+XTRN page_in_ctrl: page_rts 05
