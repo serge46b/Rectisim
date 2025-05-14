@@ -40,9 +40,8 @@ task_checking:
 			ldi r1, 0b00000010
 			and r0, r1
 		is nz
-			ldi r0, IO_SPI_KBD_ctrl
-			ldi r1, 0b00001110
-			st r0, r1
+			ldi r0, 0b00001000
+			jsr IO_SPI_send_predef
 			ld r3, r0
 			ldi r1, IO_Uni1
 			st r1, r0
@@ -93,25 +92,27 @@ task_checking:
 	br check_loop
 loop_end:
 	pop r0
-	br page_rts
-
-GLIO_restore_player_pos:
-	if
-		ldi r1, 0b00010000
-		and r3, r1
-	is nz
-		clr r0  # load adress (player 1 CSC)
-	else
-		ldi r0, 0x02  # load adress (player 2 CSC)
-	fi
-	ld r0, r1
-	inc r0
-	ld r0, r2
-	ldi r0, IO_CSR
-	st r0, r2
-	inc r0
+	jsr IO_clrCCS
+upgrade_loop:
+	ldi r0, IO_BC_ctrl
+	ldi r1, 0b00001000
 	st r0, r1
-	rts
+	ldi r1, IO_UniCS
+	ldi r0, 0b10000001
+	st r1, r0
+	ldi r0, 0b01000000
+	jsr IO_SPI_send_predef
+
+	ldi r2, IO_Uni1
+	ld r2, r0
+	tst r0
+	bz page_rts
+	
+	ldi r0, 0x01
+	ldi r1, 0x07
+	jsr page_call
+	br upgrade_loop
+
 
 IO_UniCS: ext
 IO_Uni1: ext
@@ -119,8 +120,12 @@ IO_CSR: ext
 IO_BC_ctrl: ext
 IO_SPI_KBD_ctrl: ext
 
+IO_SPI_send_predef: ext
+IO_clrCCS: ext
+
 get_player_SP_addr: ext
 inc_player_SP: ext
 
 page_rts: ext
+page_call: ext
 end
