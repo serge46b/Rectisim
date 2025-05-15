@@ -24,4 +24,4 @@ Rectify - оригинальная игра, разработанная учас
 
 ## Пример игры
 
-![Rectify](https://drive.usercontent.google.com/download?id=1ogG_ALUMPwI4GE4NiQW90yuELV_ceQ6S)
+[Видео](https://drive.usercontent.google.com/download?id=1ogG_ALUMPwI4GE4NiQW90yuELV_ceQ6S)
